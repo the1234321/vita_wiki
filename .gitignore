@@ -2,6 +2,8 @@
 *.bat
 *.webp
 debug*
+logs
+*.log
 
 # Prerequisites
 *.d

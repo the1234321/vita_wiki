@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open index.html via Python Server",
+            "url": "http://localhost:8000/index.html", // 改为服务器地址
+            "webRoot": "${workspaceFolder}",
+            "preLaunchTask": "Run Python Server" // 对应 tasks.json 中的 label
+        }
+    ]
+}
