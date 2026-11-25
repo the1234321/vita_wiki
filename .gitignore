@@ -1,3 +1,8 @@
+*.py
+*.bat
+*.webp
+debug*
+
 # Prerequisites
 *.d
 

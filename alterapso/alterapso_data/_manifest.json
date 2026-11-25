@@ -1,0 +1,133 @@
+{
+ "site": "https://alterapso.com",
+ "fetched_at": "2026-11-25T02:18:16+00:00",
+ "glossary_version": "5baa60f61664",
+ "items": 1214,
+ "changed": [],
+ "images": {
+  "downloaded": 1154,
+  "failed": []
+ },
+ "files": [
+  {
+   "path": "glossary-data/index.json",
+   "url": "https://alterapso.com/glossary-data/index.json",
+   "bytes": 136269,
+   "sha256": "f048bddea5c7518efd87ea3e67c0862cdf40ca6e5d1c8ec7efac152c781bb2bb"
+  },
+  {
+   "path": "glossary-data/d0.json",
+   "url": "https://alterapso.com/glossary-data/d0.json?v=5baa60f61664",
+   "bytes": 183951,
+   "sha256": "0cbd292051025bf2d08d3daaf3271a59742933e3e82c9c63140d3350c3d688cc"
+  },
+  {
+   "path": "glossary-data/d1.json",
+   "url": "https://alterapso.com/glossary-data/d1.json?v=5baa60f61664",
+   "bytes": 60797,
+   "sha256": "6713f9d2e84f167288c1905c98ea11a7254780bc144947eb0a5887e84a7ab149"
+  },
+  {
+   "path": "glossary-data/d2.json",
+   "url": "https://alterapso.com/glossary-data/d2.json?v=5baa60f61664",
+   "bytes": 49342,
+   "sha256": "1e2c23e14b420b6576a593f838aa8ecf101ded7271448aa928bfbbdaa7863d1e"
+  },
+  {
+   "path": "glossary-data/d3.json",
+   "url": "https://alterapso.com/glossary-data/d3.json?v=5baa60f61664",
+   "bytes": 34785,
+   "sha256": "bd468add50a4812ef260625707498783278ded6a5bc65b4ee318d28acfb8de4a"
+  },
+  {
+   "path": "glossary-data/d4.json",
+   "url": "https://alterapso.com/glossary-data/d4.json?v=5baa60f61664",
+   "bytes": 33506,
+   "sha256": "b0107dc8494039c25073dbb1d62809ff7d807b84fedd960caf846a89bc18bef8"
+  },
+  {
+   "path": "glossary-data/d5.json",
+   "url": "https://alterapso.com/glossary-data/d5.json?v=5baa60f61664",
+   "bytes": 41100,
+   "sha256": "c52c9099fb9e73b05caec841ee5a0b1ec275455cab7c40761d4ab444c5d03c95"
+  },
+  {
+   "path": "glossary-data/d6.json",
+   "url": "https://alterapso.com/glossary-data/d6.json?v=5baa60f61664",
+   "bytes": 42320,
+   "sha256": "071c5c5178f75b63bea99477c794d8213cf19242532366cde0e0e3697ac4232e"
+  },
+  {
+   "path": "glossary-data/d7.json",
+   "url": "https://alterapso.com/glossary-data/d7.json?v=5baa60f61664",
+   "bytes": 36963,
+   "sha256": "cb0805b92ce050c04e3df0bed54b68f497f1422380cb52a3376f6ff62d98943c"
+  },
+  {
+   "path": "glossary-data/d8.json",
+   "url": "https://alterapso.com/glossary-data/d8.json?v=5baa60f61664",
+   "bytes": 27652,
+   "sha256": "39bf2a9a4da41e5fd338bcb47135f1216bca1465e0df647da75d2e49fd0fa1e5"
+  },
+  {
+   "path": "glossary-data/d9.json",
+   "url": "https://alterapso.com/glossary-data/d9.json?v=5baa60f61664",
+   "bytes": 35697,
+   "sha256": "894079ef0a16346e6c76201590fecb14a60018f86f85a17bc9a58e35bc94eef9"
+  },
+  {
+   "path": "glossary-data/da.json",
+   "url": "https://alterapso.com/glossary-data/da.json?v=5baa60f61664",
+   "bytes": 23102,
+   "sha256": "fd2b32e9a615e621a918f274a2d2fc3047ce8148b0dca2f3ea494079fbc24200"
+  },
+  {
+   "path": "glossary-data/db.json",
+   "url": "https://alterapso.com/glossary-data/db.json?v=5baa60f61664",
+   "bytes": 23095,
+   "sha256": "ff4f5b4605d36955b530351d8b0548a39933d6c49de9525dffb87201807fe4cf"
+  },
+  {
+   "path": "glossary-data/dc.json",
+   "url": "https://alterapso.com/glossary-data/dc.json?v=5baa60f61664",
+   "bytes": 15861,
+   "sha256": "007c6700c9eede32406a85a3ccff06e4dd459472ebb2f7500be9767fc57c3a5a"
+  },
+  {
+   "path": "glossary-data/dd.json",
+   "url": "https://alterapso.com/glossary-data/dd.json?v=5baa60f61664",
+   "bytes": 17107,
+   "sha256": "33f1ee556163d0ef7798e9987bee13686230acad9403877339297e1c3e451879"
+  },
+  {
+   "path": "glossary-data/de.json",
+   "url": "https://alterapso.com/glossary-data/de.json?v=5baa60f61664",
+   "bytes": 17633,
+   "sha256": "d2b6c2d08a03df46e137d3517eecfc9f542e1b43dcc326035c48ac4f9ea9e976"
+  },
+  {
+   "path": "glossary-data/df.json",
+   "url": "https://alterapso.com/glossary-data/df.json?v=5baa60f61664",
+   "bytes": 14689,
+   "sha256": "7f569a74a6043ecda45ca3915c866653ea84bd6b20370f5da483147ebe7e6542"
+  },
+  {
+   "path": "glossary-data/bestiary.json",
+   "url": "https://alterapso.com/glossary-data/bestiary.json",
+   "bytes": 165507,
+   "sha256": "57afad74fcb196f7ea8ff657a6b3fc3ae9ec6647c53852aa373214828e110b18"
+  },
+  {
+   "path": "glossary-data/gacha.json",
+   "url": "https://alterapso.com/glossary-data/gacha.json",
+   "bytes": 120691,
+   "sha256": "2c3d0580ff145a8e80d6c2d389e3fa2ec7bf737cea5bccd07bcd81f904a2bca4"
+  },
+  {
+   "path": "news.json",
+   "url": "https://alterapso.com/news.json",
+   "bytes": 6127,
+   "sha256": "cc05c73689ac184ffce95104cf629b890417b335a49e4eecbd51a2c1a6fc4385"
+  }
+ ]
+}

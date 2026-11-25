@@ -1,0 +1,103 @@
+{
+  "featured": [
+    "pioneer-festival"
+  ],
+  "items": [
+    {
+      "id": "texas-hold-em-poker-a-new-mission",
+      "category": "update",
+      "title": "Texas Hold'em poker, a new mission and more!",
+      "date": "2026-11-19",
+      "body": [
+        "[h]Texas Hold'em at Casino Voloyal[/h]",
+        "[img]poker[/img]",
+        "Take a seat at the table! Texas Hold'em has arrived at Casino Voloyal. Buy in with your Casino Coins, face off against fellow Hunters or sharp NPC players, and let our butler deal you in. Your chips turn back into Casino Coins when you leave the table. Will luck be on your side?",
+        "[h]New mission: The Shelled Giant[/h]",
+        "[img]shelled-giant[/img]",
+        "Something stirs on Gal Da Val Island! A brand-new mission has arrived, packed with never-before-seen monsters fighting alongside familiar foes from the Central Control Area. Battle your way across the island and face its colossal guardian, Giel Zohg. Find it in the Mission category!",
+        "[h]VR: Raid Boss Pass[/h]",
+        "Duga Dunga, Dol Vaveer and Giel Zohg now call for a VR: Raid Boss Pass for every Hunter in the party. Find passes on Ultimate from monsters and boxes, then take on these raids for double the rare drops!",
+        "[h]Lock-on[/h]",
+        "[img]lock-on[/img]",
+        "Lock-on now follows your targeting reticle, so you lock on to exactly what you're aiming at.",
+        "[h]Graphics[/h]",
+        "[img]graphics[/img]",
+        "Make your adventure shine! The launcher has a new Graphics page with bloom, a CRT filter, anti-aliasing, sharpening, color and texture filtering, plus ready-made presets. You can also play in a window at more sizes than ever.",
+        "[h]Meseton[/h]",
+        "Meseton now shows up where you can see it, and it's friendlier to new Hunters. The rewards are as good as ever!",
+        "[h]Balance adjustments[/h]",
+        "Swords, partisans, explosive weapons, the Southern Cross catalyst and raid bosses with several parts have been rebalanced.",
+        "[h]Pioneer Festival[/h]",
+        "The Pioneer Festival has come to a close. Thank you, Hunters! Any unclaimed rewards will be waiting in your Common Bank at your next login.",
+        "[h]Also[/h]",
+        "Halloween has wrapped up in the lobbies, the casino tables are easier to walk around, and rare drop announcements have been retired."
+      ]
+    },
+    {
+      "id": "discord-server-is-now-live",
+      "category": "announcement",
+      "title": "Discord Server is now live!",
+      "date": "2026-11-19",
+      "body": [
+        "Our discord server is now live! Let's help our community grow!",
+        "https://discord.gg/XPn8fwPVb"
+      ]
+    },
+    {
+      "id": "new-raid-bosses-and-their-legendar",
+      "category": "announcement",
+      "title": "New raid bosses and their Legendary weapons!",
+      "date": "2026-11-14",
+      "body": [
+        "[img]dol-vaveer[/img]",
+        "Two new Ultimate raid bosses are now in the Raids quest section!",
+        "[h]Duga Dunga[/h]",
+        "[img]duga-dunga[/img]",
+        "[list] [*]Quest: VR Boss Training: Duga Dunga [*]Where: Raids, Episode 1 [*]Only hits on his core lower his HP. Hit his legs until one gives way and he topples! [*]Leaves 12 reward containers when defeated. [/list]",
+        "[h]Dol Vaveer[/h]",
+        "[img]dol-vaveer-lightning[/img]",
+        "[list] [*]Quest: The Secluded Valley: Dol Vaveer [*]Where: Raids, Episode 4 [*]They stand rooted in the middle of the valley while their two arms fly free. Their attacks change depending on their HP. [*]Leaves 12 reward containers when defeated. [/list]",
+        "[h]Featured Legendary weapons[/h]",
+        "[img]southern-cross[/img] [img]southern-cross-blast[/img]",
+        "[b][url=/glossary/00070E]Southern Cross[/url][/b] (12 stars), from Duga Dunga. It is the first \"Bow\" weapon archetype, for Rangers and Forces. Its arrows explode on impact. Its special attack is a specialized combo that's never been seen before!",
+        "[img]end-if[/img]",
+        "[b][url=/glossary/002002]End-If[/url][/b] (12 stars), from Dol Vaveer. It is an Axe, for Hunters only. Its special attack is a wide-area spinning combo.",
+        "Each one is the boss's own drop at 1/102.",
+        "[h]New weapon types[/h]",
+        "To adjust to the new Axe weapon type: Victor Axe and Laconium Axe are now Axes too, and use the new axe animations.",
+        "You can find more info at the [url=/bestiary]Bestiary[/url] and the [url=/glossary]Glossary[/url]!"
+      ]
+    },
+    {
+      "id": "all-rare-drops-are-now-unified-no",
+      "category": "announcement",
+      "title": "All rare drops are now unified! No section IDs required",
+      "date": "2026-11-11",
+      "body": [
+        "We've rebalanced the drop system into one unified system. All monsters now have a tier of drops on each difficulty: Common/Rare/Super Rare. You can find more info at the Glossary. Clicking the monster drop will also take you to the Bestiary, which is a new category you can also click on the nav bar!"
+      ]
+    },
+    {
+      "id": "pioneer-festival",
+      "category": "event",
+      "title": "Pioneer Festival",
+      "date": "2026-11-07",
+      "body": [
+        "The Pioneer Festival is on now!",
+        "FEATURED QUEST: Field of Caelum (Episode 2). EXP, RDR, and DAR are increased by 25%",
+        "As an added bonus, Episode 2 will be the targeted episode for Daily Boosts for the duration of the event!",
+        "Every enemy defeated in an event quest adds to the server's Festival count. Each milestone unlocks a reward.",
+        "Talk to Kanoni in the lobby to see the count and claim your next reward. Rewards go to your Common Bank."
+      ]
+    },
+    {
+      "id": "alterapso-live",
+      "category": "announcement",
+      "title": "Vita Altera PSOBB is now live!",
+      "date": "2026-11-06",
+      "body": [
+        "Welcome back, hunters! Vita Altera is a PSOBB server designed to resonate with the more modern audience. Everything here is almost completely different than your standard PSOBB server, so please take a look at what we have!"
+      ]
+    }
+  ]
+}

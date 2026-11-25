@@ -1,0 +1,2166 @@
+{
+    "000101": {
+        "d" : "A sword with good accuracy and power.",
+        "st": { "ATP": [80, 100], "ATA": 33, "MST": 0 },
+        "rq": ["90 ATP"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 32,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            }
+        ],
+        "cm": 1
+    },
+    "000201": {
+        "d" : "A large sword with good accuracy and power.",
+        "st": { "ATP": [55, 100], "ATA": 18, "MST": 0, "EVP": -5 },
+        "rq": ["169 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal"],
+        "mg": 32,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            }
+        ],
+        "cm": 1
+    },
+    "000301": {
+        "d" : "A short sword with good power and accuracy.",
+        "st": { "ATP": [50, 70], "ATA": 22, "MST": 0 },
+        "rq": ["117 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal"],
+        "mg": 50,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            }
+        ],
+        "cm": 1
+    },
+    "000401": {
+        "d" : "A long sword with good accuracy and power.",
+        "st": { "ATP": [49, 56], "ATA": 23, "MST": 0 },
+        "rq": ["192 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal", "RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 30,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            }
+        ],
+        "cm": 1
+    },
+    "000501": {
+        "d" : "A throwing blade with good power and accuracy.",
+        "st": { "ATP": [10, 30], "ATA": 16, "MST": 0 },
+        "rq": ["204 ATP"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 20,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            }
+        ],
+        "cm": 1
+    },
+    "000601": {
+        "d" : "A small gun with good accuracy and power.",
+        "st": { "ATP": [45, 65], "ATA": 29, "MST": 0 },
+        "rq": ["78 ATA"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 50,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            }
+        ],
+        "cm": 1
+    },
+    "000701": {
+        "d" : "A rifle with good accuracy and power.",
+        "st": { "ATP": [90, 90], "ATA": 41, "MST": 0 },
+        "rq": ["83 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 55,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            }
+        ],
+        "cm": 1
+    },
+    "000801": {
+        "d" : "A machine gun with good power and accuracy.",
+        "st": { "ATP": [5, 8], "ATA": 3, "MST": 0 },
+        "rq": ["87 ATA"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 9,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            }
+        ],
+        "cm": 1
+    },
+    "000901": {
+        "d" : "A shotgun with good accuracy and power.",
+        "st": { "ATP": [50, 70], "ATA": 28, "MST": 0, "EVP": -10 },
+        "rq": ["90 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 20,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            }
+        ],
+        "cm": 1
+    },
+    "000A01": {
+        "d" : "A high-quality cane with average power.",
+        "st": { "ATP": [50, 60], "ATA": 32, "MST": 15, "EVP": 10 },
+        "rq": ["150 MST"],
+        "cl": ["FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "mg": 40,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            }
+        ],
+        "cm": 1
+    },
+    "000B01": {
+        "d" : "A battle cane with good accuracy and power.",
+        "st": { "ATP": [55, 80], "ATA": 37, "MST": 20, "DFP": 10 },
+        "rq": ["200 MST"],
+        "cl": ["FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "mg": 50,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            }
+        ],
+        "dr": [
+            [1, 0, 0, 138, 1490, 8], [1, 0, 0, 134, 1821, 8], [2, 0, 0, 143, 1490, 8], [2, 0, 0, 142, 1821, 8],
+            [4, 0, 0, 153,   94, 8], [4, 0, 0, 155,   94, 8]
+        ],
+        "cm": 1
+    },
+    "000C01": {
+        "d" : "A magic cane with good power and attributes.",
+        "st": { "ATP": [10, 30], "ATA": 27, "MST": 10 },
+        "rq": ["250 MST"],
+        "cl": ["FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "mg": 15,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            }
+        ],
+        "dr": [
+            [1, 0, 0, 138, 1490, 32], [1, 0, 0, 134, 1821, 32], [2, 0, 0, 143, 1490, 32], [2, 0, 0, 142, 1821, 32],
+            [4, 0, 0, 153,   94, 32], [4, 0, 0, 155,   94, 32]
+        ],
+        "cm": 1
+    },
+    "000D01": {
+        "d" : "Legendary claws that kill silently. Its special attack can fell enemies with a single blow.",
+        "st": { "ATP": [335, 345], "ATA": 50, "MST": 0, "EVP": 15 },
+        "rq": ["336 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal"],
+        "mg": 15,
+        "sp": "Dark",
+        "ef": [
+            "Claw attacks reach two targets. Normal combo hits restore 2% / 4% / 6% maximum TP; heavy attacks restore twice as much."
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Good Luck!",
+                "m": "Episode 1",
+                "r": "1/35 per Secret Ticket",
+                "q": 1,
+                "c": "1 Secret Ticket per draw"
+            }
+        ],
+        "dr": [
+            [4, 0, 1,   1,  324,   8], [4, 0, 1,   2,  423,  64], [4, 0, 1,  58,  896,   2], [2, 0, 2,  63,   83, 512],
+            [2, 0, 2,  79,   83, 512], [2, 0, 2,  16,  148,  32], [2, 0, 2,  18,  185, 240], [2, 0, 2, 113,  185,   4],
+            [2, 0, 2, 115,  431, 264], [2, 0, 2,  37,  431,   1], [1, 0, 3,  49,   77,   8], [1, 0, 3,  87,  185, 162],
+            [1, 0, 3,  46,  216, 280], [1, 0, 3,  17,  216, 133], [1, 0, 3,   8,  216, 512], [1, 0, 3,  17, 1061,  32],
+            [2, 0, 3,  18,  185, 176], [2, 0, 3,  69,  209, 512], [2, 0, 3, 115,  216, 264], [2, 0, 3,  37,  216,   1]
+        ]
+    },
+    "000E01": {
+        "d" : "A legendary double-bladed sword usable only by male Hunters and Rangers. Causes confusion.",
+        "st": { "ATP": [150, 153], "ATA": 35, "MST": 0 },
+        "rq": ["343 ATP"],
+        "cl": ["HUmar", "HUcast", "RAmar", "RAcast"],
+        "mg": 30,
+        "sp": "Havoc",
+        "ef": [
+            "Normal-attack accuracy; 80% base effectiveness before enemy resistance. Confusion lasts 9s. Enemy immunities apply."
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Black Paper's Deal",
+                "m": "Episode 4, Normal",
+                "r": "1/15 per roll",
+                "q": 1,
+                "c": "From a reward box. 1 item per box on Normal. Unidentified"
+            }
+        ],
+        "dr": [
+            [4, 0, 1,  39, 199,  68], [1, 0, 2,  61, 431, 664], [1, 0, 2,  46, 431,   1], [2, 0, 2,   4,  11,  68],
+            [2, 0, 2,   3,  11,  68], [2, 0, 2,  57,  11, 256], [2, 0, 2,  60, 162,   8], [4, 0, 2,   9, 862,   4],
+            [1, 0, 3,  96,  65,  32], [1, 0, 3,  56, 171,   2], [1, 0, 3,  87, 185, 512], [1, 0, 3, 106, 216,   4],
+            [1, 0, 3,  92, 240, 153], [2, 0, 3, 116, 216,  64], [2, 0, 3,  75, 216,   4]
+        ]
+    },
+    "000F01": {
+        "d" : "Gear that boosts attack power for unarmed combat. Its special attack freezes enemies.",
+        "st": { "ATP": [460, 560], "ATA": 62, "MST": 0, "DFP": 10 },
+        "rq": ["610 ATP"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 50,
+        "sp": "Freeze",
+        "dr": [
+            [4, 0, 1,  55, 100,  32], [4, 0, 1,  95, 371, 512], [4, 0, 1, 124, 657, 128], [4, 0, 1, 125, 657, 128],
+            [4, 0, 1,  77, 852, 256], [4, 0, 1,  58, 896,  32], [4, 0, 1, 104, 986,  64], [4, 0, 1, 105, 986,  64],
+            [1, 0, 2,  92, 240, 712], [2, 0, 2,  48,  11,   4], [2, 0, 2,   4,  11, 256], [2, 0, 2,   3,  11, 256],
+            [2, 0, 2,  73,  47,  64], [2, 0, 2,  79,  83,   8], [4, 0, 2, 128, 471, 128], [4, 0, 2, 129, 471, 128],
+            [4, 0, 2,  59, 767,   8], [1, 0, 3,  96,  65,  15], [1, 0, 3,  79, 144, 512], [1, 0, 3,  93, 259, 128],
+            [2, 0, 3,  79,  83, 512], [2, 0, 3,  60, 162,  32], [2, 0, 3,  18, 185,   8], [2, 0, 3,  50, 216,  64]
+        ]
+    },
+    "001001": {
+        "d" : "AUW 1975 model. Made by Dousetsu.",
+        "st": { "ATP": [460, 480], "ATA": 45, "MST": 0 },
+        "rq": ["500 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal"],
+        "sp": "Dim",
+        "so": [
+            {
+                "k": "quest",
+                "t": "Black Paper's Deal",
+                "m": "Episode 4, Very Hard",
+                "r": "1/15 per roll",
+                "q": 1,
+                "c": "From a reward box. 3 items per box on Very Hard. Unidentified"
+            },
+            {
+                "k": "quest",
+                "t": "Black Paper's Deal",
+                "m": "Episode 4, Ultimate",
+                "r": "1/14 per roll",
+                "q": 1,
+                "c": "From a reward box. 4 items per box on Ultimate. Unidentified"
+            }
+        ],
+        "dr": [
+            [1, 0, 3,   0,    22,  32], [1, 0, 3,  84,    22, 512], [1, 0, 3,  83, 18517, 128],
+            [1, 0, 3, 111, 18517,  64], [1, 0, 3,  34, 22632,   2], [1, 0, 3,  53, 29099, 265],
+            [2, 0, 3,  73,  1293,  16], [2, 0, 3,  79, 22632,   4]
+        ]
+    },
+    "001101": {
+        "d" : "A cursed, but powerful scythe that drains HP.",
+        "st": { "ATP": [263, 278], "ATA": 45, "MST": 0 },
+        "rq": ["850 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal", "FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "mg": 9,
+        "sp": "Twin Megid",
+        "us": [
+            {
+                "l": "Unique special",
+                "n": "Twin Megid",
+                "t": [
+                    "Each special swing fires two Lv.20 Megids, a moment apart, each piercing up to 5 enemies. It costs 2% of maximum HP.",
+                    "Each Megid hits an enemy once with a Lv.20 instant-kill chance. If the kill fails, it deals 20% of the gap between your ATP and the enemy's DFP, and that hit always leaves at least 1 HP."
+                ]
+            }
+        ],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Soul Eater and use D-Photon Core on it from your inventory; it becomes Soul Banish."
+            }
+        ],
+        "dr": [ [2, 0, 3, 32, 398, 4], [2, 0, 3, 74, 398, 1], [2, 0, 3, 112, 708, 96], [2, 0, 3, 33, 796, 8] ]
+    },
+    "001401": {
+        "d" : "Female only gun. Delude the opponents heart with this special gun.",
+        "st": { "ATP": [400, 500], "ATA": 60, "MST": 0 },
+        "rq": ["170 ATA"],
+        "cl": ["HUnewearl", "HUcaseal", "RAmarl", "RAcaseal", "FOmarl", "FOnewearl"],
+        "sp": "Chaos",
+        "ef": [
+            "Normal-attack accuracy; 80% base effectiveness before enemy resistance. Confusion lasts 12s. Enemy immunities apply."
+        ],
+        "so": [ {"k": "quest", "t": "White Day", "m": "Episode 1", "r": "Guaranteed", "q": 1} ],
+        "dr": [ [2, 0, 3, 62, 2.02, 162], [2, 0, 3, 70, 2.02, 162], [4, 0, 3, 102, 3112, 1], [4, 0, 3, 103, 3112, 1] ]
+    },
+    "001501": {
+        "d" : "A mysterious weapon. Its abilities are unknown.",
+        "st": { "ATP": [340, 540], "ATA": 40, "MST": 0 },
+        "rq": ["164 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 18,
+        "sp": "Piercing Foie barrage",
+        "us": [
+            {
+                "l": "Unique special",
+                "n": "Piercing Foie barrage",
+                "t": [
+                    "Hold the special to fire a Lv.20 Foie every 0.2 seconds for up to 2 seconds. You can turn or follow a locked target while firing, and the special cannot be used in a combo.",
+                    "Each Foie uses a fixed 270 MST at 70% power, flies 300 units and pierces up to 3 enemies or boxes for 100%, 50% and 25% damage.",
+                    "Hits set enemies on fire for 10 seconds, and further hits refresh the burn."
+                ]
+            }
+        ],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Flame Visit and use Photon Booster on it from your inventory; it becomes Burning Visit."
+            }
+        ]
+    },
+    "002001": {
+        "d": "A large axe that is heavy and difficult to wield. Made of rare laconium metal giving it near unmatchable strength.",
+        "st": { "ATP": [700, 750], "ATA": 40, "MST": 0, "EVP": -30 },
+        "rq": ["880 ATP"],
+        "cl": ["HUmar", "HUcast", "HUcaseal"],
+        "mg": 25,
+        "sp": "Berserk",
+        "us": [
+            {
+                "l": "Weapon type",
+                "n": "Axe",
+                "t": [
+                    "An axe is held in the left hand, with the right hand on the handle.",
+                    "Normal and heavy swings hit once each and reach up to 3 targets."
+                ]
+            }
+        ],
+        "dr": [ [1, 0, 3, 27, 37, 4], [4, 0, 3, 100, 86, 4] ]
+    },
+    "002201": {
+        "d": "This designer analysed a holy relic he owned and then developed this special weapon. It produces energy waves that boost Grants.",
+        "st": { "ATP": [390, 400], "ATA": 58, "MST": 150, "DFP": 5 },
+        "rq": ["770 MST"],
+        "cl": ["FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "te": [ {"name": "Grants", "effect": "Damage +30%"} ],
+        "so": [ {"k": "quest", "t": "Claire's Deal 5", "m": "Episode 4", "r": "Exchange", "q": 1} ]
+    },
+    "002F01": {
+        "d" : "Magic cane whose power has been enhanced by a blue-black stone.",
+        "st": { "ATP": [384, 390], "ATA": 43, "MST": 0 },
+        "rq": ["800 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal"],
+        "mg": 80,
+        "sp": "Devil's",
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Monkey King Bar and use Blue-black stone on it from your inventory; it becomes Black King Bar."
+            }
+        ]
+    },
+    "003001": {
+        "d": "An intricate double saber that draws in the power of the sun. Swinging the blade releases waves of energy that quickly tire those who wield it.",
+        "st": { "ATP": [325, 358], "ATA": 50, "MST": 2 },
+        "rq": ["555 ATP"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "To The Deepest Blue -MA4 Venue-",
+                "m": "Episode 2",
+                "r": "Random",
+                "q": 1,
+                "c": "MA4 venue lottery prize"
+            }
+        ]
+    },
+    "004201": {
+        "d" : "A heavy black barrel handgun. Usable only by males.",
+        "st": { "ATP": [350, 380], "ATA": 52, "MST": 5 },
+        "rq": ["150 ATA"],
+        "cl": ["HUmar", "HUcast", "RAmar", "RAcast", "FOmar", "FOnewm"],
+        "mg": 9,
+        "sp": "Master's",
+        "ef": [
+            "While equipped, multiplies character EXP by 1.1x, stacking with other bonuses. Special attacks are disabled; no EXP siphon.",
+            "Cannot perform a combo."
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Black Paper's Dangerous Deal 2",
+                "m": "Episode 4, Normal",
+                "r": "1/9 per roll",
+                "q": 1,
+                "c": "From a reward box. 1 item per box on Normal. Unidentified"
+            },
+            {
+                "k": "quest",
+                "t": "Black Paper's Dangerous Deal 2",
+                "m": "Episode 4, Hard",
+                "r": "1/16 per roll",
+                "q": 1,
+                "c": "From a reward box. 2 items per box on Hard. Unidentified"
+            }
+        ]
+    },
+    "004301": {
+        "d" : "A small white barrel handgun. Usable only by females.",
+        "st": { "ATP": [80, 90], "ATA": 32, "MST": 5 },
+        "rq": ["150 ATA"],
+        "cl": ["HUnewearl", "HUcaseal", "RAmarl", "RAcaseal", "FOmarl", "FOnewearl"],
+        "mg": 9,
+        "sp": "Lord's",
+        "ef": [
+            "While equipped, multiplies character EXP by 1.2x, stacking with other bonuses. Special attacks are disabled; no EXP siphon."
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Black Paper's Dangerous Deal 2",
+                "m": "Episode 4, Normal",
+                "r": "1/9 per roll",
+                "q": 1,
+                "c": "From a reward box. 1 item per box on Normal. Unidentified"
+            },
+            {
+                "k": "quest",
+                "t": "Black Paper's Dangerous Deal 2",
+                "m": "Episode 4, Very Hard",
+                "r": "1/18 per roll",
+                "q": 1,
+                "c": "From a reward box. 3 items per box on Very Hard. Unidentified"
+            },
+            {
+                "k": "quest",
+                "t": "Black Paper's Dangerous Deal 2",
+                "m": "Episode 4, Ultimate",
+                "r": "1/17 per roll",
+                "q": 1,
+                "c": "From a reward box. 4 items per box on Ultimate. Unidentified"
+            }
+        ]
+    },
+    "004501": {
+        "d" : "A mysterious weapon. Its abilities are unknown.",
+        "st": { "ATP": [300, 400], "ATA": 60, "MST": 0 },
+        "rq": ["162 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 18,
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Frozen Shooter and use Photon Booster on it from your inventory; it becomes Snow Queen."
+            }
+        ]
+    },
+    "004B01": {
+        "d" : "A pair of guns that work perfectly in concert with one another. Steals enemies' experience.",
+        "st": { "ATP": [350, 400], "ATA": 22, "MST": 10 },
+        "rq": ["210 ATA"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal", "RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 21,
+        "sp": "King's",
+        "ef": [
+            "While equipped, multiplies character EXP by 1.3x, stacking with other bonuses. Special attacks are disabled; no EXP siphon."
+        ],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Last Swan and use Master Raven on it from your inventory; it becomes Dual Bird."
+            },
+            {
+                "k": "combination",
+                "t": "Equip Master Raven and use Last Swan on it from your inventory; it becomes Dual Bird."
+            }
+        ]
+    },
+    "004E01": {
+        "d" : "A mysterious weapon. Its abilities are unknown.",
+        "st": { "ATP": [500, 580], "ATA": 42, "MST": 0 },
+        "rq": ["181 ATA"],
+        "cl": ["RAcast", "RAcaseal"],
+        "mg": 18,
+        "sp": "Chaos",
+        "ef": [
+            "Normal-attack accuracy; 80% base effectiveness before enemy resistance. Confusion lasts 12s. Enemy immunities apply."
+        ],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Panzer Faust and use Photon Booster on it from your inventory; it becomes Iron Faust."
+            }
+        ]
+    },
+    "005601": {
+        "d" : "A huge leaf. Weapon becomes more powerful once in contact with water.",
+        "st": { "ATP": [219, 280], "ATA": 45, "MST": 20 },
+        "rq": ["590 MST"],
+        "cl": ["HUmar", "HUnewearl", "RAmar", "RAmarl", "FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "dr": [
+            [2, 0, 1, 32,   47,  32], [2, 0, 1, 52,   47,   4], [2, 0, 2, 51,   47,  33], [2, 0, 2, 72,   47,   4],
+            [2, 0, 2, 71,   47,   4], [2, 0, 2, 73,   47, 512], [2, 0, 2, 37,  431,   8], [2, 0, 3, 76,  910, 548],
+            [2, 0, 3, 37, 1061,   8], [2, 0, 3, 50, 1061,   1]
+        ]
+    },
+    "006D01": {
+        "d" : "A mysterious weapon. Its abilities are unknown.",
+        "st": { "ATP": [270, 270], "ATA": 37, "MST": 232 },
+        "rq": ["160 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 20,
+        "us": [
+            {
+                "l": "Unique attacks",
+                "n": "Double Gizonde",
+                "t": [
+                    "Each shot fires a Gizonde with a fixed 1500 MST instead of yours, then a second one 0.12 seconds later."
+                ]
+            }
+        ],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Maser Beam and use Photon Booster on it from your inventory; it becomes Power Maser."
+            }
+        ]
+    },
+    "006E01": {
+        "d" : "This feature is LOGiN issue #1 Strike!",
+        "st": { "ATP": [5, 5], "ATA": 25, "MST": 0 },
+        "rq": ["25 ATP"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ]
+    },
+    "008901": {
+        "d" : "A pair of swords bonded with ultra low temperature Photons. Its special attack freezes enemies.",
+        "st": { "ATP": [304, 312], "ATA": 40, "MST": 0 },
+        "rq": ["470 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal"],
+        "mg": 60,
+        "sp": "Blizzard",
+        "so": [
+            {
+                "k": "quest",
+                "t": "7-5: Isle of Mutants",
+                "m": "Episode 2, Ultimate",
+                "r": "Guaranteed",
+                "q": 1,
+                "c": "Hunters only. item has +20, Hit 30%. Once per character per difficulty"
+            }
+        ],
+        "dr": [
+            [4, 0, 1,  59, 370,  128], [4, 0, 1,  95, 371,    8], [4, 0, 1,  58, 896,   80], [1, 0, 2,  40,  11, 1023],
+            [2, 0, 2,   4,  11,  699], [2, 0, 2,   3,  11,  699], [2, 0, 2,  48,  11,  256], [2, 0, 2,  72,  47,  249],
+            [2, 0, 2,  71,  47,  249], [2, 0, 2,  74,  47,  512], [4, 0, 2, 126, 681,   16], [4, 0, 2,  95, 845,  128],
+            [1, 0, 3,  88,  72,   32], [1, 0, 3,  79, 144,  133], [1, 0, 3,  41, 216,    8], [1, 0, 3, 106, 216,  512]
+        ]
+    },
+    "008A01": {
+        "d" : "AUW 2018 model. Made by Kikoku.",
+        "st": { "ATP": [500, 550], "ATA": 50, "MST": 0 },
+        "rq": ["650 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal"],
+        "sp": "Fill",
+        "ef": [
+            "Creates a stationary 10-second field. Restores 13% of each nearby living party member's max HP every 0.5s. No enemy hit required. Replaces the damaging special. Shared 120s field cooldown, even after switching weapons."
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Black Paper's Deal",
+                "m": "Episode 4, Very Hard",
+                "r": "1/15 per roll",
+                "q": 1,
+                "c": "From a reward box. 3 items per box on Very Hard. Unidentified"
+            }
+        ],
+        "dr": [ [1, 0, 3, 61, 67896, 1], [2, 0, 3, 18, 29099, 4] ]
+    },
+    "008B01": {
+        "d" : "A legendary Photon launcher said to have been created by an outlaw.",
+        "st": { "ATP": [240, 250], "ATA": 38, "MST": 0 },
+        "rq": ["120 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 18,
+        "sp": "Blizzard",
+        "so": [
+            {
+                "k": "quest",
+                "t": "7-5: Isle of Mutants",
+                "m": "Episode 2, Ultimate",
+                "r": "Guaranteed",
+                "q": 1,
+                "c": "Rangers only. item has +18, Hit 30%. Once per character per difficulty"
+            }
+        ],
+        "dr": [
+            [4, 0, 1,   1,  324,   64], [1, 0, 2, 119,   11, 1023], [2, 0, 2,  57,   11,  767],
+            [2, 0, 2,  73,   47,  189], [2, 0, 2,  74,   47,  256], [2, 0, 2,  33,  162,  256],
+            [4, 0, 2,  39,  199,    2], [1, 0, 3,  83,  118,   32], [1, 0, 3,  79,  144,    2],
+            [1, 0, 3,  56,  171,  649], [1, 0, 3,  87,  185,   16], [1, 0, 3,  46,  216,   64],
+            [1, 0, 3,  93,  259,    4], [2, 0, 3,  33,  162,  512], [2, 0, 3,  36,  185,    1],
+            [2, 0, 3,  54,  216,    8], [2, 0, 3,  98, 3183,  260]
+        ]
+    },
+    "008C01": {
+        "d" : "A card bearing an ancient magical incantation. Its special attack steals enemy TP.",
+        "st": { "ATP": [120, 200], "ATA": 40, "MST": 100 },
+        "rq": ["480 MST"],
+        "cl": ["FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "mg": 9,
+        "sp": "Soul",
+        "ef": [
+            "Creates a stationary 10-second field. Restores 5% of each nearby living party member's max TP every 0.5s. No enemy hit required. Replaces the damaging special. Shared 120s field cooldown, even after switching weapons."
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "7-5: Isle of Mutants",
+                "m": "Episode 2, Ultimate",
+                "r": "Guaranteed",
+                "q": 1,
+                "c": "Forces only. item has +9, Hit 30%. Once per character per difficulty"
+            }
+        ],
+        "dr": [
+            [1, 0, 2,  27,   11   , 1023], [1, 0, 2,  16,  106   ,  168], [2, 0, 2,  65,    1.15,    4],
+            [2, 0, 2,  48,   11   ,  763], [2, 0, 2,  73,   47   ,    2], [2, 0, 2,  51,   47   ,  256],
+            [2, 0, 2, 112,  144   ,  512], [2, 0, 2,  33,  162   ,   16], [4, 0, 2,   1,  609   ,   64],
+            [1, 0, 3,  49,   77   ,   32], [1, 0, 3,  63,  144   ,    9], [1, 0, 3,  17,  216   ,   16],
+            [1, 0, 3,  82, 1274   ,   66], [2, 0, 3,  79,  144   ,    8], [2, 0, 3,  36,  185   ,    2],
+            [2, 0, 3, 115,  216   ,    4], [2, 0, 3,  50,  216   ,  256], [2, 0, 3,  16,  259   ,    4]
+        ]
+    },
+    "008E01": {
+        "d" : "Sinow Berill's knuckle with Photon camouflage.",
+        "st": { "ATP": [320, 321], "ATA": 30, "MST": 0 },
+        "rq": ["600 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal"],
+        "mg": 15,
+        "sp": "Chaos",
+        "ef": [
+            "Normal-attack accuracy; 80% base effectiveness before enemy resistance. Confusion lasts 12s. Enemy immunities apply."
+        ],
+        "so": [
+            {"k": "quest", "t": "Claire's Deal 5", "m": "Episode 4", "r": "Exchange", "q": 1},
+            {
+                "k": "combination",
+                "t": "Equip S-Berill's Hands #0 and use Berill Photon on it from your inventory; it becomes S-Berill's Hands #1."
+            }
+        ]
+    },
+    "008F01": {
+        "d" : "AUW 3064 model. Replica by Mick Co. Model that became the standard and made Mick famous.",
+        "st": { "ATP": [164, 248], "ATA": 13, "MST": 0, "LCK": 5 },
+        "rq": ["387 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal"],
+        "mg": 16,
+        "us": [
+            {
+                "l": "Set bonus",
+                "n": "Flowen set",
+                "t": [
+                    "Worn with Flowen's Frame, Flowen's Shield and any Flowen's Sword (the original, every dated replica or True): each piece's own stats are raised by 50%, the sword's ATP and ATA and the Frame's and the Shield's DFP and EVP."
+                ]
+            }
+        ],
+        "dr": [ [1, 0, 3, 64, 77, 4] ]
+    },
+    "009001": {
+        "d" : "AUW 3067 model. Replica by Torato Co. A perfect replica, down to the identical materials and process.",
+        "st": { "ATP": [100, 143], "ATA": 29, "MST": 0 },
+        "rq": ["131 ATP"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 14,
+        "so": [
+            {
+                "k": "quest",
+                "t": "Black Paper's Deal",
+                "m": "Episode 4, Hard",
+                "r": "1/19 per roll",
+                "q": 1,
+                "c": "From a reward box. 2 items per box on Hard. Unidentified"
+            }
+        ],
+        "dr": [ [2, 0, 3, 60, 162, 4] ]
+    },
+    "009301": {
+        "d" : "A mysterious weapon. Its abilities are unknown.",
+        "st": { "ATP": [200, 250], "ATA": 40, "MST": 44 },
+        "rq": ["200 MST"],
+        "cl": ["FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "dr": [ [2, 0, 3, 16, 40738, 2] ]
+    },
+    "00A201": {
+        "d" : "Enemy weapon made from the right arm of a Gobooma.",
+        "st": { "ATP": [330, 345], "ATA": 50, "MST": 0 },
+        "rq": ["336 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal", "RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 35,
+        "ef": [
+            "Claw attacks reach two targets. Normal combo hits restore 2% / 4% / 6% maximum TP; heavy attacks restore twice as much."
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Dr. Osto's Research",
+                "m": "Episode 1",
+                "r": "Exchange",
+                "q": 1,
+                "c": "exchange: hand over 1x Gobooma's Right Arm (030D10). Dr. Osto's monster-parts exchange"
+            },
+            {"k": "quest", "t": "Unsealed Door",   "m": "Episode 1", "r": "Exchange", "q": 1},
+            {"k": "quest", "t": "Claire's Deal 5", "m": "Episode 4", "r": "Exchange", "q": 1}
+        ]
+    },
+    "00AD01": {
+        "d" : "A machine gun with an icy blue barrel.",
+        "st": { "ATP": [175, 185], "ATA": 40, "MST": 0 },
+        "rq": ["190 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 9,
+        "sp": "Blizzard"
+    },
+    "00DE01": {
+        "d" : "A special photon weapon. Its abilities are unknown.",
+        "st": { "ATP": [140, 140], "ATA": 50, "MST": 0 },
+        "rq": ["350 ATP"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 125,
+        "so": [
+            {"k": "quest", "t": "Beach Laughter", "m": "Episode 2", "r": "Your choice", "q": 1, "c": "Forces only"}
+        ]
+    },
+    "00DF01": {
+        "d" : "A special photon weapon. Its abilities are unknown.",
+        "st": { "ATP": [100, 130], "ATA": 55, "MST": 0 },
+        "rq": ["350 ATP"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 125
+    },
+    "00E001": {
+        "d" : "A special photon weapon. Its abilities are unknown.",
+        "st": { "ATP": [100, 140], "ATA": 45, "MST": 0 },
+        "rq": ["350 ATP"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 125
+    },
+    "00E101": {
+        "d" : "A special photon weapon. Its abilities are unknown.",
+        "st": { "ATP": [10, 80], "ATA": 40, "MST": 0 },
+        "rq": ["350 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal", "RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 100,
+        "so": [
+            {"k": "quest", "t": "Beach Laughter", "m": "Episode 2", "r": "Your choice", "q": 1, "c": "Rangers only"}
+        ]
+    },
+    "00E301": {
+        "d" : "A special photon weapon. Its abilities are unknown.",
+        "st": { "ATP": [180, 220], "ATA": 65, "MST": 0 },
+        "rq": ["350 ATP"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 125
+    },
+    "00E401": {
+        "d" : "A special photon weapon. Its abilities are unknown.",
+        "st": { "ATP": [8, 8], "ATA": 40, "MST": 0, "DFP": 50 },
+        "rq": ["350 MST"],
+        "cl": ["FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "mg": 80,
+        "so": [
+            {"k": "quest", "t": "Beach Laughter", "m": "Episode 2", "r": "Your choice", "q": 1, "c": "Forces only"}
+        ]
+    },
+    "00E501": {
+        "d" : "A special photon weapon. Its abilities are unknown.",
+        "st": { "ATP": [7, 20], "ATA": 40, "MST": 0, "DFP": 50 },
+        "rq": ["350 MST"],
+        "cl": ["FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "mg": 125,
+        "so": [
+            {"k": "quest", "t": "Beach Laughter", "m": "Episode 2", "r": "Your choice", "q": 1, "c": "Forces only"}
+        ]
+    },
+    "00E801": {
+        "d" : "A special photon weapon. Its abilities are unknown.",
+        "st": { "ATP": [10, 10], "ATA": 50, "MST": 0 },
+        "rq": ["90 ATA"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 90,
+        "so": [
+            {"k": "quest", "t": "Beach Laughter", "m": "Episode 2", "r": "Your choice", "q": 1, "c": "Rangers only"}
+        ]
+    },
+    "010101": {
+        "d" : "Protective gear for the body. Boosts defense for Hunters and Rangers.",
+        "st": { "DFP": [7, 9], "EVP": [7, 9], "EFR": 0, "EIC": 5, "ETH": 0, "EDK": 0, "ELT": 0 },
+        "rq": ["Level 4"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal", "RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "cm": 1
+    },
+    "010111": {
+        "d" : "Superior protective gear for the body. Boosts defense for all classes.",
+        "st": { "DFP": [85, 89], "EVP": [47, 49], "EFR": 0, "EIC": 0, "ETH": 5, "EDK": 18, "ELT": 15 },
+        "rq": ["Level 63"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "cm": 1
+    },
+    "010121": {
+        "d" : "Parasitic armor that boosts defense, but decreases HP. Not equippable by Androids.",
+        "st": { "DFP": [145, 145], "EVP": [85, 85], "EFR": 0, "EIC": 0, "ETH": 0, "EDK": 20, "ELT": 0 },
+        "rq": ["Level 66"],
+        "cl": ["HUmar", "HUnewearl", "RAmar", "RAmarl", "FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip PARASITE WEAR:De Rol and use Parasitic cell Type D on it from your inventory; it becomes PARASITE WEAR:Nelgal."
+            }
+        ]
+    },
+    "010131": {
+        "d" : "Armor with a protective aura. It has high defensive power, but drains TP.",
+        "st": { "DFP": [235, 285], "EVP": [134, 154], "EFR": 0, "EIC": 0, "ETH": 0, "EDK": 20, "ELT": 20 },
+        "rq": ["Level 152"],
+        "cl": ["HUmar", "HUnewearl", "RAmar", "RAmarl", "FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Good Luck!",
+                "m": "Episode 1",
+                "r": "1/35 per Secret Ticket",
+                "q": 1,
+                "c": "1 Secret Ticket per draw"
+            },
+            {"k": "quest", "t": "Project C.A.R.D. Genesis", "m": "Episode 4, Ultimate", "r": "1/1280 per box", "q": 1},
+            {
+                "k": "combination",
+                "t": "Equip Spirit Garment and use magic rock \"Moola\" on it from your inventory; it becomes Aura Field."
+            },
+            {"k": "boss", "t": "Open the clear boxes after defeating the Dioscuri twins in Project C.A.R.D.: Genesis."}
+        ],
+        "dr": [ [2, 0, 3, 84, 2.02, 128], [2, 0, 3, 33, 1881, 64], [2, 0, 3, 33, 2588, 2], [2, 0, 3, 115, 3448, 32] ]
+    },
+    "010141": {
+        "d" : "Strange garb that is used by expert assassins.",
+        "st": { "DFP": [113, 121], "EVP": [136, 144], "EFR": 2, "EIC": 2, "ETH": 2, "EDK": 16, "ELT": 8 },
+        "rq": ["Level 101"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Black Paper's Deal",
+                "m": "Episode 4, Very Hard",
+                "r": "1/15 per roll",
+                "q": 1,
+                "c": "From a reward box. 3 items per box on Very Hard"
+            }
+        ],
+        "dr": [
+            [4, 0, 3, 100,     86,   64], [4, 0, 3, 152,  87382, 1023], [4, 0, 3, 153,  87382, 1023],
+            [4, 0, 3, 154,  87382, 1023], [4, 0, 3, 155,  87382, 1023], [4, 0, 3, 156,  87382, 1023],
+            [4, 0, 3, 157, 104858, 1023], [4, 0, 3, 158, 104858, 1023], [4, 0, 3, 159, 104858, 1023]
+        ]
+    },
+    "010151": {
+        "d" : "Jackets worn by the 32nd Mobile Infantry.",
+        "st": { "DFP": [118, 130], "EVP": [45, 53], "EFR": 1, "EIC": 1, "ETH": 1, "EDK": 8, "ELT": 6 },
+        "rq": ["Level 91"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Black Paper's Deal",
+                "m": "Episode 4, Very Hard",
+                "r": "1/15 per roll",
+                "q": 1,
+                "c": "From a reward box. 3 items per box on Very Hard"
+            }
+        ],
+        "dr": [ [4, 0, 2, 59, 767, 68], [4, 0, 2, 58, 910, 1], [4, 0, 2, 77, 1703, 944] ]
+    },
+    "010201": {
+        "d" : "A shield for the left hand. Boosts evasion for Hunters and Rangers.",
+        "st": { "DFP": [4, 9], "EVP": [32, 37], "EFR": 20, "EIC": 20, "ETH": 15, "EDK": 0, "ELT": 0 },
+        "rq": ["Level 4"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal", "RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "cm": 1
+    },
+    "010211": {
+        "d" : "A superior protective screen. Boosts defense for all classes.",
+        "st": { "DFP": [44, 49], "EVP": [170, 175], "EFR": 27, "EIC": 30, "ETH": 27, "EDK": 0, "ELT": 0 },
+        "rq": ["Level 63"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "cm": 1
+    },
+    "010221": {
+        "d" : "A prototype of a protective screen that stimulates natural healing. The regeneration isn't functional.",
+        "st": { "DFP": [40, 47], "EVP": [85, 92], "EFR": 0, "EIC": 0, "ETH": 0, "EDK": 0, "ELT": 0 },
+        "rq": ["Level 66"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Good Luck!",
+                "m": "Episode 1",
+                "r": "1/35 per Secret Ticket",
+                "q": 1,
+                "c": "1 Secret Ticket per draw"
+            }
+        ],
+        "dr": [ [1, 0, 2, 14, 370, 512], [1, 0, 2, 54, 431, 491] ]
+    },
+    "010231": {
+        "d" : "Glasses with a red frame. They seem identical to the ones Rico was wearing.",
+        "st": { "DFP": [1, 1], "EVP": [1, 1], "EFR": 0, "EIC": 0, "ETH": 0, "EDK": 0, "ELT": 0 },
+        "rq": ["Level 148"],
+        "cl": ["FOmarl"],
+        "dr": [ [1, 0, 3, 20, 64, 34], [1, 0, 3, 21, 65, 34], [1, 0, 3, 115, 1478, 512] ]
+    },
+    "010241": {
+        "d" : "Small shield that boosts the Foie techniques.",
+        "st": { "DFP": [2, 7], "EVP": [25, 30], "EFR": 20, "EIC": 0, "ETH": 0, "EDK": 0, "ELT": 0 },
+        "rq": ["Level 24"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "te": [
+            {"name": "Foie",   "effect": "Damage +20%"},
+            {"name": "Gifoie", "effect": "Damage +20%"},
+            {"name": "Rafoie", "effect": "Damage +20%"}
+        ],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Red Barrier and use Amplifier of Red on it from your inventory; it becomes Red Merge."
+            }
+        ]
+    },
+    "010251": {
+        "d" : "Official shield of the military's WORKS unit. Serial Number%05d.",
+        "st": { "DFP": [11, 16], "EVP": [75, 80], "EFR": 5, "EIC": 5, "ETH": 5, "EDK": 0, "ELT": 0 },
+        "rq": ["Level 14"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [ {"k": "quest", "t": "Respective Tomorrow", "m": "Episode 2", "r": "Guaranteed", "q": 1} ]
+    },
+    "010261": {
+        "d" : "An inscription reads, \"This ring shall fortify the minds of the two bearers with the gift of focus.\"",
+        "st": { "DFP": [35, 40], "EVP": [130, 135], "EFR": 5, "EIC": 5, "ETH": 5, "EDK": 5, "ELT": 5 },
+        "rq": ["Level 81"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ]
+    },
+    "010271": {
+        "d" : "An inscription reads, \"This ring shall fortify the minds of the two bearers with the gift of focus.\"",
+        "st": { "DFP": [35, 40], "EVP": [130, 135], "EFR": 5, "EIC": 5, "ETH": 5, "EDK": 5, "ELT": 5 },
+        "rq": ["Level 81"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ]
+    },
+    "010281": {
+        "d" : "An inscription reads, \"This ring shall fortify the minds of the two bearers with the gift of focus.\"",
+        "st": { "DFP": [35, 40], "EVP": [130, 135], "EFR": 5, "EIC": 5, "ETH": 5, "EDK": 5, "ELT": 5 },
+        "rq": ["Level 81"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ]
+    },
+    "010291": {
+        "d" : "A shield using De Rol Le's shell for added protection.",
+        "st": { "DFP": [180, 180], "EVP": [120, 120], "EFR": 5, "EIC": 15, "ETH": 20, "EDK": 0, "ELT": 20 },
+        "rq": ["Level 102"],
+        "cl": ["HUmar", "HUnewearl", "RAmar", "RAmarl", "FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Stink Shield and use De Rol Le Shell on it from your inventory; it becomes De Rol Le Shield."
+            }
+        ]
+    },
+    "0102A1": {
+        "d" : "A shield made of an unknown wood. Grants varied defence and evasion.",
+        "st": { "DFP": [158, 158], "EVP": [237, 237], "EFR": 0, "EIC": 0, "ETH": 0, "EDK": 0, "ELT": 0 },
+        "rq": ["Level 80"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "event",
+                "t": "Pioneer Festival milestone 4 reward: claim from Kanoni in the lobby with a Redria character to get the Redria Genpei."
+            }
+        ]
+    },
+    "010301": {
+        "d" : "A reinforcing unit for protective gear. Boosts attack power by 10 when equipped.",
+        "st": {"ATP": 10},
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "ef": [
+            "General/Power+: ATP +11. General/Power++: ATP +12.",
+            "General/Power-: ATP +9. General/Power--: ATP +8."
+        ],
+        "dr": [
+            [2, 0, 0, 84,     1.15, 128], [2, 0, 0, 65,     1.15, 516], [2, 0, 0, 29, 13510   , 512],
+            [2, 0, 0, 45, 15762   , 256]
+        ],
+        "cm": 1
+    },
+    "010311": {
+        "d" : "A reinforcing unit for protective gear. Boosts max HP by 20 when equipped.",
+        "st": {"HP": 20},
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "cm": 1
+    },
+    "010321": {
+        "d" : "A reinforcing unit for protective gear. Boosts fire resistance by 5 when equipped.",
+        "st": {"EFR": 5},
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "dr": [ [1, 0, 0, 65, 1.15, 261] ],
+        "cm": 1
+    },
+    "010331": {
+        "d" : "A reinforcing unit that boosts fire, ice, lightning, light and dark resistances by 6 when equipped.",
+        "st": {"EFR": 6, "EIC": 6, "ETH": 6, "ELT": 6, "EDK": 6},
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "cm": 1
+    },
+    "010341": {
+        "d": "A reinforcing unit for protective gear. Boosts attack speed significantly when equipped.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "ef": ["Attack speed +20%."],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Black Paper's Deal",
+                "m": "Episode 4, Normal",
+                "r": "1/10 per roll",
+                "q": 1,
+                "c": "From a reward box. 1 item per box on Normal"
+            }
+        ],
+        "dr": [ [4, 0, 2, 89, 2.94, 4], [4, 0, 2, 90, 2.94, 4], [1, 0, 3, 64, 375, 64], [2, 0, 3, 52, 398, 64] ]
+    },
+    "010351": {
+        "d": "Raises ATA for Hunters and Forces using ranged attacks.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Black Paper's Deal",
+                "m": "Episode 4, Ultimate",
+                "r": "1/16 per roll",
+                "q": 1,
+                "c": "From a reward box. 4 items per box on Ultimate"
+            },
+            {
+                "k": "quest",
+                "t": "Black Paper's Dangerous Deal 2",
+                "m": "Episode 4, Normal",
+                "r": "1/9 per roll",
+                "q": 1,
+                "c": "From a reward box. 1 item per box on Normal"
+            },
+            {
+                "k": "quest",
+                "t": "Black Paper's Dangerous Deal 2",
+                "m": "Episode 4, Hard",
+                "r": "1/16 per roll",
+                "q": 1,
+                "c": "From a reward box. 2 items per box on Hard"
+            },
+            {
+                "k": "quest",
+                "t": "Black Paper's Dangerous Deal 2",
+                "m": "Episode 4, Very Hard",
+                "r": "1/18 per roll",
+                "q": 1,
+                "c": "From a reward box. 3 items per box on Very Hard"
+            },
+            {
+                "k": "quest",
+                "t": "Black Paper's Dangerous Deal 2",
+                "m": "Episode 4, Ultimate",
+                "r": "1/17 per roll",
+                "q": 1,
+                "c": "From a reward box. 4 items per box on Ultimate"
+            },
+            {"k": "quest", "t": "Project C.A.R.D. Genesis", "m": "Episode 4, Ultimate", "r": "1/330 per box", "q": 1},
+            {"k": "boss", "t": "Open the clear boxes after defeating the Dioscuri twins in Project C.A.R.D.: Genesis."}
+        ],
+        "dr": [ [4, 0, 3, 129, 753, 36], [4, 0, 3, 128, 753, 4] ]
+    },
+    "010361": {
+        "d": "Draws ether from the air to recover one percent of max HP every 3 seconds while equipped.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [ {"k": "quest", "t": "Claire's Deal 5", "m": "Episode 4", "r": "Exchange", "q": 1} ]
+    },
+    "0201"  : {
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "mag",
+                "t": "Feed your Mag (in a game or in the Casino Voloyal lobby) or use Mag Feed Devices until it evolves: a Mag reaches its first evolution at level 10."
+            }
+        ]
+    },
+    "0211"  : {
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "mag",
+                "t": "Feed your Mag (in a game or in the Casino Voloyal lobby) or use Mag Feed Devices until it evolves: at Mag level 50 a second-stage Mag becomes one of the level 50 forms; Sita is one of them."
+            }
+        ]
+    },
+    "0221"  : {
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "mag",
+                "t": "Use Cell of MAG 502 while your Mag is equipped; with an even Section ID character it turns the Mag into Soniti."
+            }
+        ]
+    },
+    "0231"  : {
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [ {"k": "mag", "t": "Use Kit of MARK3 on your equipped Mag (Mag) to turn it into Mark3."} ]
+    },
+    "0241"  : {
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "mag",
+                "t": "Feed your Mag (in a game or in the Casino Voloyal lobby) or use Mag Feed Devices until it evolves: a level 50 form can turn into the rare Nidra at Mag level 100 or higher."
+            }
+        ]
+    },
+    "0251"  : {
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "mag",
+                "t": "Use Cell of MAG 0507 on your equipped Mag (see conditions) to turn it into Cell of MAG 0507."
+            }
+        ]
+    },
+    "030001": {
+        "d": "Health recovery fluid. Restores HP. Restoration is based upon difficulty level.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Warrior's Pride",
+                "m": "Episode 4",
+                "r": "Guaranteed",
+                "q": 1,
+                "n": "10",
+                "c": "script message announces the stack (\"Received 10 ...!\", 5 for Trifluid)"
+            },
+            {"k": "quest", "t": "9-2: Data Retrieval", "m": "Episode 4", "r": "Random", "q": 1},
+            {
+                "k": "shop",
+                "t": "Tool Shop in Pioneer 2 or the Lab, and the Tool Shop stall in the lobbies: always in stock at every level and difficulty."
+            }
+        ]
+    },
+    "030101": {
+        "d": "TP recovery fluid. Restores 30 TP at once, then 1 TP every 0.2 seconds for 20 seconds.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Warrior's Pride",
+                "m": "Episode 4",
+                "r": "Guaranteed",
+                "q": 1,
+                "n": "10",
+                "c": "script message announces the stack (\"Received 10 ...!\", 5 for Trifluid)"
+            },
+            {"k": "quest", "t": "9-2: Data Retrieval", "m": "Episode 4", "r": "Random", "q": 1},
+            {
+                "k": "shop",
+                "t": "Tool Shop in Pioneer 2 or the Lab, and the Tool Shop stall in the lobbies: always in stock at every level and difficulty."
+            }
+        ]
+    },
+    "030201": {
+        "d": "Can be used to learn technique. Disappears after one use.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "5-5: Test/VR Temple 5",
+                "m": "Episode 2, Hard",
+                "r": "Guaranteed",
+                "q": 1,
+                "c": "Forces only. Once per character per difficulty"
+            },
+            {"k": "drop", "t": "Drops from enemies and boxes. Its technique level depends on the difficulty and area."}
+        ]
+    },
+    "030211": {
+        "d": "Can be used to learn technique. Disappears after one use.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {"k": "drop", "t": "Drops from enemies and boxes. Its technique level depends on the difficulty and area."}
+        ]
+    },
+    "030601": {
+        "d": "Removes paralysis from the body.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "shop",
+                "t": "Tool Shop in Pioneer 2 or the Lab, and the Tool Shop stall in the lobbies: always in stock at every level and difficulty."
+            }
+        ]
+    },
+    "030A01": {
+        "d": "Raises the attack value of equipped weapons by 6. No effect if a weapon is already upgraded to the maximum limit.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {"k": "quest", "t": "New Mop-Up Operation #1", "m": "Episode 4, Hard", "r": "Guaranteed", "q": 1},
+            {"k": "quest", "t": "New Mop-Up Operation #2", "m": "Episode 4, Hard", "r": "Guaranteed", "q": 1},
+            {"k": "quest", "t": "New Mop-Up Operation #3", "m": "Episode 4, Hard", "r": "Guaranteed", "q": 1},
+            {"k": "quest", "t": "New Mop-Up Operation #4", "m": "Episode 4, Hard", "r": "Guaranteed", "q": 1},
+            {"k": "quest", "t": "New Mop-Up Operation #5", "m": "Episode 4, Hard", "r": "Guaranteed", "q": 1},
+            {"k": "quest", "t": "AOL CUP -Maximum Attack-", "m": "Episode 1", "r": "Guaranteed", "q": 1},
+            {
+                "k": "quest",
+                "t": "Reach for the Dream",
+                "m": "Episode 2, Very Hard, Ultimate",
+                "r": "Guaranteed",
+                "q": 1
+            },
+            {
+                "k": "quest",
+                "t": "To The Deepest Blue -MA4 Venue-",
+                "m": "Episode 2",
+                "r": "Random",
+                "q": 1,
+                "c": "MA4 venue lottery prize"
+            },
+            {
+                "k": "quest",
+                "t": "Today's Rate",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "NPC gift (\"a token of my thanks\")"
+            }
+        ]
+    },
+    "030B01": {
+        "d": "Increase Mental Strength (MST) by 2. Attribute will not exceed class limit.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {"k": "quest", "t": "Singing by the Beach",     "m": "Episode 2", "r": "Random",     "q": 1},
+            {"k": "quest", "t": "AOL CUP -Maximum Attack-", "m": "Episode 1", "r": "Guaranteed", "q": 1},
+            {
+                "k": "quest",
+                "t": "To The Deepest Blue -MA4 Venue-",
+                "m": "Episode 2",
+                "r": "Random",
+                "q": 1,
+                "c": "MA4 venue lottery prize"
+            },
+            {
+                "k": "quest",
+                "t": "Today's Rate",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "NPC gift (\"a token of my thanks\")"
+            },
+            {
+                "k": "quest",
+                "t": "Rappy's Holiday",
+                "m": "Episode 1",
+                "r": "Random",
+                "q": 1,
+                "c": "Random material or weapon prize"
+            },
+            {
+                "k": "quest",
+                "t": "Project C.A.R.D. Genesis",
+                "m": "Episode 4, Ultimate",
+                "r": "About 1/37.3 per box",
+                "q": 1,
+                "n": "3"
+            },
+            {
+                "k": "quest",
+                "t": "VR Boss Training: Duga Dunga",
+                "m": "Episode 1, Ultimate",
+                "r": "1/22 per container",
+                "q": 1,
+                "n": "1-3",
+                "c": "From the 12 reward containers after the fight. Each player gets their own roll. Rare drops are doubled in this raid",
+                "e": "DUGA_DUNGA"
+            },
+            {
+                "k": "quest",
+                "t": "The Secluded Valley: Dol Vaveer",
+                "m": "Episode 4, Ultimate",
+                "r": "1/22 per container",
+                "q": 1,
+                "n": "1-3",
+                "c": "From the 12 reward containers after the fight. Each player gets their own roll. Rare drops are doubled in this raid",
+                "e": "DOL_VAVEER"
+            },
+            {
+                "k": "quest",
+                "t": "The Shelled Giant: Giel Zohg",
+                "m": "Episode 2, Ultimate",
+                "r": "1/22 per container",
+                "q": 1,
+                "n": "1-3",
+                "c": "From the 12 reward containers after the fight. Each player gets their own roll. Rare drops are doubled in this raid",
+                "e": "GIEL_ZOHG"
+            },
+            {
+                "k": "quest",
+                "t": "The Shelled Giant",
+                "m": "Episode 2, Ultimate",
+                "r": "1/22 per container",
+                "q": 1,
+                "n": "1-3",
+                "c": "From the 12 reward containers after the fight. Each player gets their own roll",
+                "e": "GIEL_ZOHG"
+            },
+            {
+                "k": "boss",
+                "t": "Open the clear boxes after defeating the Dioscuri twins in Project C.A.R.D.: Genesis."
+            },
+            {
+                "k": "other",
+                "t": "Paradigm Shift at Alesia (the Secret Doctor at the Medical Center counter in Pioneer 2 or the Lab, Photon Modifications screen): when she changes your class, she gives back one Mind Material for each one your character had used (the counters reset)."
+            }
+        ],
+        "dr": [
+            [1, 0, 0,   0,    1.15,  23], [1, 0, 0,  16,    5.99,   1], [2, 0, 0,  96,  753   , 256],
+            [2, 0, 0,  76, 2150   , 416], [2, 0, 0,  36, 2150   , 624], [2, 0, 0,  69, 2427   ,  97],
+            [2, 0, 0, 116, 2508   ,   2], [2, 0, 0,  35, 2508   , 128], [2, 0, 0,   5, 2508   ,  96],
+            [2, 0, 0, 115, 2508   ,   4], [2, 0, 0,  93, 2508   ,   1], [2, 0, 1,  76,  370   ,  32],
+            [2, 0, 2,  93,  431   ,   1]
+        ]
+    },
+    "030C01": {
+        "d": "A kit that helps certain Mags evolve.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Item Present",
+                "m": "Episode 2",
+                "r": "Your choice",
+                "q": 1,
+                "c": "Trade 1 Item Ticket with Momoka"
+            },
+            {
+                "k": "quest",
+                "t": "AOL CUP -Sunset Base-",
+                "m": "Episode 1",
+                "r": "Guaranteed",
+                "q": 1,
+                "c": "After 10,000 total kills in AOL CUP -Maximum Attack-. Once per character"
+            },
+            {
+                "k": "event",
+                "t": "Use a Jack-O'-Lantern from your inventory to open it; it becomes one random item from the Halloween table."
+            }
+        ]
+    },
+    "030D01": {
+        "d": "Body part of an enemy. It is said that someone can turn it into a weapon.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "dr": [ [1, 0, 2, 109, 108, 495] ]
+    },
+    "030D11": {
+        "d": "Body part of an enemy. It is said that someone can turn it into a weapon.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "dr": [ [1, 0, 2, 53, 185, 832], [1, 0, 2, 53, 370, 4] ]
+    },
+    "030E01": {
+        "d": "A special gene that eats away at objects on the Photon level and transfigures them.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "dr": [ [2, 0, 3, 86, 102, 301], [2, 1, 3, 86, 102, 301] ]
+    },
+    "030E11": {
+        "d": "An evolutionary unit for Mags that have met certain preconditions. Said to have been developed by Dr. Games.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Item Present",
+                "m": "Episode 2",
+                "r": "Your choice",
+                "q": 1,
+                "c": "Trade 1 Item Ticket with Momoka"
+            }
+        ]
+    },
+    "030E21": {
+        "d": "Photon Amplifier that boosts the effective power of Gizonde.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "dr": [
+            [1, 0, 0, 133, 1171, 184], [2, 0, 0, 142, 1171, 184], [1, 0, 1, 133,  683,  32], [1, 0, 1, 133, 1171, 152],
+            [2, 0, 1, 142, 1171, 248], [1, 0, 2, 134, 1171, 168], [2, 0, 2, 142, 1171,  16], [1, 0, 3, 133,  373,  32],
+            [2, 0, 3, 142,  631,  32]
+        ]
+    },
+    "031001": {
+        "d": "Rare super pure crystal Photon. There is someone who needs this...",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {"k": "quest", "t": "Gallon's Shop", "m": "Episode 2", "r": "Random", "q": 1},
+            {
+                "k": "event",
+                "t": "Pioneer Festival milestone 8 reward: talk to Kanoni in the lobby once the server has defeated 40,000 enemies in Field of Caelum."
+            }
+        ]
+    },
+    "031101": {
+        "d": "The 4 swords forged by the 4 Heavens: Sange Kamui Agito Yasha",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [ {"k": "quest", "t": "Claire's Deal 5", "m": "Episode 4", "r": "Exchange", "q": 1} ]
+    },
+    "031201": {
+        "d": "The secret organization, Weapons badge. It looks like there are some ranks listed.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [ {"k": "quest", "t": "AOL CUP -Maximum Attack-", "m": "Episode 1", "r": "Guaranteed", "q": 1} ]
+    },
+    "031211": {
+        "d": "A very sweet and tasty cake.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ]
+    },
+    "031401": {
+        "d": "Homemade candy. Hand-crafted with love!",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {"k": "quest", "t": "The Principal's Gift", "m": "Episode 1", "r": "Guaranteed", "q": 1},
+            {"k": "quest", "t": "Towards the Future",   "m": "Episode 1", "r": "Guaranteed", "q": 1}
+        ]
+    },
+    "031501": {
+        "d": "Mysterious egg. What could be inside?",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "dr": [
+            [2, 0, 0, 43, 1.15, 1023], [2, 0, 1, 43, 1.15, 1023], [2, 0, 2, 43, 1.15, 1023], [2, 0, 3, 43, 1.15, 1023]
+        ]
+    },
+    "031601": {
+        "d": "Mysterious music disk. 12 different types are known to exist.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "Gallon's Shop",
+                "m": "Episode 2",
+                "r": "Purchase",
+                "q": 1,
+                "c": "buy from Gallon's CD menu with Meseta (price shown in-game, the list grows with progress)"
+            }
+        ]
+    },
+    "031701": {
+        "d": "\"A\" You are a role model for all hunters. Your skills as a hunter are outstanding!",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ]
+    },
+    "031801": {
+        "d": "Desc.UNKNOWN3",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ]
+    },
+    "031901": {
+        "d": "Can be exchanged for 1000 team points.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ]
+    },
+    "002601": {
+        "d" : "SUPPRESSED GUN (Geist) Photon Shard shop edition.",
+        "st": { "ATP": [420, 500], "ATA": 47, "MST": 0 },
+        "rq": ["110 ATA"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 9,
+        "sp": "Geist",
+        "ef": [
+            "Creates a stationary 10-second field. Restores 6% of each nearby living party member's max TP every 0.5s. No enemy hit required. Replaces the damaging special. Shared 120s field cooldown, even after switching weapons."
+        ]
+    },
+    "00B101": {
+        "d" : "LE COGNEUR (Geist) Photon Shard shop edition.",
+        "st": { "ATP": [310, 330], "ATA": 60, "MST": 0 },
+        "rq": ["140 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "sp": "Geist",
+        "ef": [
+            "Creates a stationary 10-second field. Restores 6% of each nearby living party member's max TP every 0.5s. No enemy hit required. Replaces the damaging special. Shared 120s field cooldown, even after switching weapons."
+        ]
+    },
+    "003601": {
+        "d": "Light-green photon halos that ride the wind. Their special sends both rings hunting for twenty seconds before returning.",
+        "st": { "ATP": [300, 350], "ATA": 40, "MST": 0 },
+        "rq": ["500 ATP"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 40,
+        "sp": "Chakram throw",
+        "us": [
+            {
+                "l": "Unique special",
+                "n": "Chakram throw",
+                "t": [
+                    "Special throws both discs. They hunt enemies within 120 units of you for 20 seconds, each preferring a different enemy and breaking boxes when no enemy is near, then fly back.",
+                    "Each disc hit deals 1.25x normal-attack damage with normal-attack accuracy, and a disc can hit the same enemy again after 0.5 seconds.",
+                    "You cannot attack until both discs return, and the special cannot be used in a combo."
+                ]
+            }
+        ],
+        "ef": [
+            "Catalyst: Cyclone. Unlocked by 2,000 disc hits on enemies with the Windgazer Chakrams equipped.",
+            "With the catalyst complete, use the special again while the discs are hunting to send both discs to the enemy you are locked on to, or the nearest one in front of you. They spin there as a cyclone for 5 seconds, striking every enemy around it twice a second, then fly back.",
+            "While the discs are away, normal and heavy attacks become short wind blades that deal half damage and can hit enemies above and below you."
+        ],
+        "dr": [
+            [4, 0, 3, 128, 3300, 128], [4, 0, 3, 129, 3300, 128], [4, 1, 3, 128, 3300, 128], [4, 1, 3, 129, 3300, 128]
+        ]
+    },
+    "00C001": {
+        "d" : "Weapon of mass destruction. Created by a madman.",
+        "st": { "ATP": [500, 600], "ATA": 45, "MST": 0 },
+        "rq": ["205 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "us": [
+            {
+                "l": "Unique attacks",
+                "n": "Cluster rocket",
+                "t": [
+                    "Normal and heavy attacks fire one rocket on a fixed arc straight ahead. It does not home.",
+                    "At the top of the arc, about 60 units ahead, or when it hits a wall, it bursts into 5 bomblets that land at random spots 10 to 40 units around that point.",
+                    "Each bomblet hits up to 5 enemies or boxes for half the attack's damage. It is held and fired like a Shot, cannot combo and has no special attack."
+                ]
+            }
+        ],
+        "ef": [
+            "Catalyst: Saturation. Unlocked by firing 500 rockets that hit 5 or more enemies.",
+            "The rocket splits into 8 bomblets instead of 5.",
+            "A bomblet that lands with no enemy or box in its blast rolls to the nearest enemy and explodes there."
+        ],
+        "so": [
+            {
+                "k": "quest",
+                "t": "VR Boss Training: Duga Dunga",
+                "m": "Episode 1, Ultimate",
+                "r": "1/1,200 per container",
+                "q": 1,
+                "c": "From the 12 reward containers after the fight. Each player gets their own roll. Rare drops are doubled in this raid",
+                "e": "DUGA_DUNGA"
+            }
+        ],
+        "dr": [ [2, 0, 3, 113, 1081, 512], [2, 0, 3, 33, 1460, 2], [2, 1, 3, 113, 1081, 512], [2, 1, 3, 33, 1460, 2] ]
+    },
+    "006C01": {
+        "d": "A weapon forged in meseta. It cannot make a heavy attack nor a special attack, but it can be fired continuously.",
+        "st": { "ATP": [50, 80], "ATA": 30, "MST": 0, "LCK": 10 },
+        "rq": ["135 ATA"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "mg": 30,
+        "us": [
+            {
+                "l": "Unique attacks",
+                "n": "Meseta bullets",
+                "t": [
+                    "Normal attack only. A tap fires 10 Meseta bullets from alternating muzzles, and holding keeps firing at 25 bullets per second until your Meseta runs out. Each bullet costs 10 Meseta and deals 80% of normal-attack damage without making the enemy flinch.",
+                    "Bullets fly straight at 480 units per second with random spread around your aim, up to 18 degrees sideways and 6 degrees up or down, and reach 10 units past Mechgun range, so they can miss.",
+                    "With El Dorado Armor and El Dorado Shield worn, each bullet pierces up to 3 enemies for 100%, 50% and 25% damage; a box stops it."
+                ]
+            }
+        ],
+        "dr": [
+            [1, 0, 3, 130, 2.0, 1023], [1, 1, 3, 130, 2.0, 1023], [2, 0, 3, 130, 2.0, 1023], [2, 1, 3, 130, 2.0, 1023],
+            [4, 0, 3, 130, 2.0, 1023], [4, 1, 3, 130, 2.0, 1023]
+        ]
+    },
+    "006A01": {
+        "d" : "The newest model of an antique. Hold the attack button to charge a devastating fan-attack",
+        "st": { "ATP": [420, 480], "ATA": 45, "MST": 0 },
+        "rq": ["170 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 20,
+        "us": [
+            {
+                "l": "Unique attacks",
+                "n": "Charged spin sweep",
+                "t": [
+                    "Hold Normal or Heavy for 1 second, then release: you spin three times in 0.8 seconds, firing 36 shots in a full circle while sliding up to 45 units forward. Each enemy or box within Handgun range takes at most one normal-attack hit per spin.",
+                    "You can move and roll while charging. A tap of up to 0.2 seconds fires a normal shot, and releasing between 0.2 and 1 second cancels the charge.",
+                    "Built-in +20% attack speed adds to attack-speed units. It has no special attack."
+                ]
+            }
+        ],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Yasminkov 2000H and use Yasminkov Parts on it from your inventory; it becomes Yasminkov 2000HX."
+            }
+        ]
+    },
+    "001E01": {
+        "d": "The ultimate gun, a weapon veiled in mystery. \"Divine Punishment,\" its special attack, is based on time...",
+        "st": { "ATP": [300, 330], "ATA": 50, "MST": 0 },
+        "rq": ["210 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "us": [
+            {
+                "l": "Unique special",
+                "n": "Divine Punishment",
+                "t": [
+                    "Divine Punishment ignores 30% of an enemy's Light resistance; weaknesses are unchanged.",
+                    "Divine Punishment is usable at every beat time."
+                ]
+            }
+        ],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Heaven Punisher and use Divine Filter on it from your inventory; it becomes Heaven Punisher [Divine]."
+            }
+        ]
+    },
+    "00BF01": {
+        "d" : "A handgun based on secret military blueprints.",
+        "st": { "ATP": [550, 660], "ATA": 55, "MST": 25 },
+        "rq": ["200 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 20,
+        "sp": "Berserk",
+        "us": [
+            {
+                "l": "Unique special",
+                "n": "Divine Punishment",
+                "t": [
+                    "Divine Punishment ignores 30% of an enemy's Light resistance.",
+                    "It is usable at every beat time but still needs a Striker Unit Mag equipped."
+                ]
+            }
+        ],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Heaven Striker and use Divine Filter on it from your inventory; it becomes Heaven Striker [Divine]."
+            }
+        ]
+    },
+    "00B001": {
+        "d" : "Powerful machine gun that's fit only for veteran Rangers.",
+        "st": { "ATP": [200, 220], "ATA": 45, "MST": 10 },
+        "rq": ["190 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 12,
+        "us": [
+            {
+                "l": "Unique special",
+                "n": "Divine Punishment",
+                "t": [
+                    "Every special shot calls red Divine Punishments on up to 5 targets anywhere in the room, enemies or a boss's body parts, at every beat time.",
+                    "Each shot strikes at least 3 times, and no more than 3 of its strikes land on one boss.",
+                    "Divine Punishment ignores 30% of an enemy's Light resistance and deals 25% more damage than on the other Divine Punishment weapons."
+                ]
+            }
+        ],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Mille Marteaux and use Divine Filter on it from your inventory; it becomes Mille Marteaux [Divine]."
+            }
+        ]
+    },
+    "00DD01": {
+        "d" : "A weapon forged in your image. Style: Lone Virtue Customize it with Lise.",
+        "st": { "ATP": [500, 500], "ATA": 50, "MST": 0 },
+        "rq": ["800 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal"],
+        "mg": 150,
+        "us": [
+            {
+                "l": "Unique attacks",
+                "n": "3-target swings",
+                "t": ["Each attack reaches up to 3 enemies, whichever model you forge."]
+            }
+        ],
+        "so": [
+            {
+                "k": "forge",
+                "t": "Forge it in the Forge tab of Lise's Player Shop (Check Room counter, Pioneer 2) once your account has cleared the Genesis raid. It is free: choose this style (Hunters only), a model (Saber, Axe or Katana) and a name of up to 12 letters."
+            },
+            {
+                "k": "forge",
+                "t": "Install a special for 200 Photon Shards: Burning, Tempest, Blizzard, Arrest, Hell, Berserk or Spirit."
+            },
+            {
+                "k": "forge",
+                "t": "Install a passive for 1 Photon Sphere: HP Absorb, TP Absorb, Auto Burn, Auto Shock, Auto Freeze, Auto Jellen or Auto Zalure."
+            },
+            {"k": "forge", "t": "Renaming it is free."}
+        ],
+        "sx": ["Saber", "Axe", "Katana"]
+    },
+    "00E701": {
+        "d" : "A weapon forged in your image. Style: Niten Customize it with Lise.",
+        "st": { "ATP": [200, 200], "ATA": 45, "MST": 0 },
+        "rq": ["800 ATP"],
+        "cl": ["HUmar", "HUnewearl", "HUcast", "HUcaseal"],
+        "mg": 150,
+        "us": [
+            {
+                "l": "Unique attacks",
+                "n": "Twin strikes",
+                "t": ["Each attack reaches up to 2 enemies; the Axe model reaches up to 3."]
+            }
+        ],
+        "so": [
+            {
+                "k": "forge",
+                "t": "Forge it in the Forge tab of Lise's Player Shop (Check Room counter, Pioneer 2) once your account has cleared the Genesis raid. It is free: choose this style (Hunters only), a model (Saber, Axe or Katana) and a name of up to 12 letters."
+            },
+            {
+                "k": "forge",
+                "t": "Install a special for 200 Photon Shards: Burning, Tempest, Blizzard, Arrest, Hell, Berserk or Spirit."
+            },
+            {
+                "k": "forge",
+                "t": "Install a passive for 1 Photon Sphere: HP Absorb, TP Absorb, Auto Burn, Auto Shock, Auto Freeze, Auto Jellen or Auto Zalure."
+            },
+            {"k": "forge", "t": "Renaming it is free."}
+        ],
+        "sx": ["Saber", "Axe", "Katana"]
+    },
+    "00EB01": {
+        "d" : "A weapon forged in your image. Style: Crossbow Customize it with Lise.",
+        "st": { "ATP": [150, 150], "ATA": 40, "MST": 0 },
+        "rq": ["180 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 150,
+        "us": [
+            {
+                "l": "Unique attacks",
+                "n": "Three-ray volley",
+                "t": [
+                    "Every attack fires three bullets, straight ahead and about 12 degrees to each side, out to 170 units, each aimed at its own target. Its photon parts and bullets glow in shifting rainbow colours."
+                ]
+            }
+        ],
+        "so": [
+            {
+                "k": "forge",
+                "t": "Forge it in the Forge tab of Lise's Player Shop (Check Room counter, Pioneer 2) once your account has cleared the Genesis raid. It is free: choose this style (Rangers only), a model (Handgun, Rifle or Ruby Bullet) and a name of up to 12 letters."
+            },
+            {
+                "k": "forge",
+                "t": "Install a special for 200 Photon Shards: Burning, Tempest, Blizzard, Arrest, Hell, Berserk or Spirit."
+            },
+            {
+                "k": "forge",
+                "t": "Install a passive for 1 Photon Sphere: HP Absorb, TP Absorb, Auto Burn, Auto Shock, Auto Freeze, Auto Jellen or Auto Zalure."
+            },
+            {"k": "forge", "t": "Renaming it is free."}
+        ],
+        "sx": ["Handgun", "Rifle", "Ruby Bullet"]
+    },
+    "00EA01": {
+        "d" : "A weapon forged in your image. Style: Akimbo Customize it with Lise.",
+        "st": { "ATP": [10, 10], "ATA": 20, "MST": 0 },
+        "rq": ["180 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal"],
+        "mg": 100,
+        "us": [
+            {
+                "l": "Unique attacks",
+                "n": "Long-range shots",
+                "t": [
+                    "Shots reach 210 units and hit one enemy each. Its photon parts and bullets glow in shifting rainbow colours."
+                ]
+            }
+        ],
+        "so": [
+            {
+                "k": "forge",
+                "t": "Forge it in the Forge tab of Lise's Player Shop (Check Room counter, Pioneer 2) once your account has cleared the Genesis raid. It is free: choose this style (Rangers only), a model (Handgun, Rifle or Ruby Bullet) and a name of up to 12 letters."
+            },
+            {
+                "k": "forge",
+                "t": "Install a special for 200 Photon Shards: Burning, Tempest, Blizzard, Arrest, Hell, Berserk or Spirit."
+            },
+            {
+                "k": "forge",
+                "t": "Install a passive for 1 Photon Sphere: HP Absorb, TP Absorb, Auto Burn, Auto Shock, Auto Freeze, Auto Jellen or Auto Zalure."
+            },
+            {"k": "forge", "t": "Renaming it is free."}
+        ],
+        "sx": ["Handgun", "Rifle", "Ruby Bullet"]
+    },
+    "00EC01": {
+        "d" : "A weapon forged in your image. Style: Wand Style Customize it with Lise.",
+        "st": { "ATP": [10, 10], "ATA": 60, "MST": 300 },
+        "rq": ["800 MST"],
+        "cl": ["FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "mg": 100,
+        "us": [
+            {
+                "l": "Unique effect",
+                "n": "Elemental boost",
+                "t": ["Fire, ice and lightning techniques (the Foie, Barta and Zonde lines) deal 10% more damage."]
+            }
+        ],
+        "so": [
+            {
+                "k": "forge",
+                "t": "Forge it in the Forge tab of Lise's Player Shop (Check Room counter, Pioneer 2) once your account has cleared the Genesis raid. It is free: choose this style (Forces only), a model (Cane, Rod or Wand) and a name of up to 12 letters."
+            },
+            {
+                "k": "forge",
+                "t": "Install a special for 200 Photon Shards: Burning, Tempest, Blizzard, Arrest, Hell, Berserk or Spirit."
+            },
+            {
+                "k": "forge",
+                "t": "Install a passive for 1 Photon Sphere: HP Absorb, TP Absorb, Auto Burn, Auto Shock, Auto Freeze, Auto Jellen or Auto Zalure."
+            },
+            {"k": "forge", "t": "Renaming it is free."}
+        ],
+        "sx": ["Cane", "Rod", "Wand"]
+    },
+    "001B01": {
+        "d" : "An amplified Bringer rifle. Fires two consecutive homing projectiles.",
+        "st": { "ATP": [620, 650], "ATA": 63, "MST": 0, "EVP": -20 },
+        "rq": ["140 ATA"],
+        "cl": ["RAmar", "RAmarl", "RAcast", "RAcaseal", "FOmar", "FOmarl", "FOnewm", "FOnewearl"],
+        "mg": 9,
+        "sp": "Demon's",
+        "us": [
+            {
+                "l": "Unique attacks",
+                "n": "Double homing shot",
+                "t": [
+                    "Every normal, heavy and special attack fires two shots in quick succession, each a separate hit with its own accuracy roll.",
+                    "Each shot curves to follow the enemy it was aimed at. A shot with no target, or one blocked by a wall, flies straight."
+                ]
+            }
+        ],
+        "so": [
+            {
+                "k": "combination",
+                "t": "Equip Bringer's Rifle and use Bringer Amplifier on it from your inventory; it becomes Bringer Rifle (Omega)."
+            }
+        ]
+    },
+    "031011": {
+        "d": "Equipped Mag Lv.100+. Changes its boss encounter trigger to Shifta and Deband.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "shop",
+                "t": "Kanoni's Shard Collector: in an Episode 2 game, use the Hunter's Guild counter in the Lab, choose Shops, then The Shard Collector (up to 4 players). Talk to Kanoni and buy it in the Mag Triggers section."
+            }
+        ]
+    },
+    "031811": {
+        "d": "Allows an equipped Mag Lv.100+ to use any Mag cell once, ignoring requirements.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ]
+    },
+    "031021": {
+        "d": "Equipped Mag Lv.100+. Restores its full PB gauge trigger to its native effect.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "so": [
+            {
+                "k": "shop",
+                "t": "Kanoni's Shard Collector: in an Episode 2 game, use the Hunter's Guild counter in the Lab, choose Shops, then The Shard Collector (up to 4 players). Talk to Kanoni and buy it in the Misc section."
+            }
+        ]
+    },
+    "010161": {
+        "d" : "The Mad King's armor. Unfathomable powers are achieved the more gold is equipped.",
+        "st": { "DFP": [0, 0], "EVP": [0, 0], "EFR": 20, "EIC": 20, "ETH": 20, "EDK": 20, "ELT": 20 },
+        "rq": ["Level 108"],
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ],
+        "ef": [
+            "No stats of its own.",
+            "Worn together with the El Dorado Shield: this armor adds +150 DFP, +150 EVP and +5 ATA (the pair: +300 DFP, +300 EVP, +10 ATA), and the pair gives +15% technique damage.",
+            "Worn together with the El Dorado Shield: equip any weapon your class can use whatever your race or sex, with no weapon stat requirements.",
+            "Worn together with the El Dorado Shield: a golden aura outlines you in the field."
+        ],
+        "so": [
+            {
+                "k": "unseal",
+                "t": "Equip a Forbidden Armor and land the killing blow on 10,000 enemies; it then unseals into El Dorado Armor with 0 to 4 slots."
+            },
+            {"k": "unseal", "t": "Use an Ancient Unsealer while a Forbidden Armor is equipped to unseal it at once."}
+        ]
+    },
+    "010371": {
+        "d": "A ring shared by two hearts. Both rings in one party give more damage, EXP and Meseta and +5 to all resistances.",
+        "cl": [
+            "HUmar",     "HUnewearl", "HUcast",    "HUcaseal",  "RAmar",     "RAmarl",    "RAcast",    "RAcaseal",
+            "FOmar",     "FOmarl",    "FOnewm",    "FOnewearl"
+        ]
+    }
+}
