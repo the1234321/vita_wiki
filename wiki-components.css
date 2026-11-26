@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 8px;
+  gap: 6px;
 }
 
 .toolbar-row {
@@ -18,7 +18,7 @@
 
 .drop-nav {
   display: grid;
-  gap: 4px;
+  gap: 2px;
   padding: 2px 0;
 }
 
@@ -30,7 +30,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  min-height: 32px;
+  min-height: 36px;
 }
 
 .drop-nav-row > span {
@@ -44,14 +44,14 @@
 }
 
 .drop-tab {
-  min-height: 30px;
-  padding: 5px 12px;
+  min-height: 36px;
+  padding: 6px 14px;
   border: 1px solid #30465b;
   border-radius: 4px;
   background: #111c29;
   color: #b9c8d6;
   font: inherit;
-  font-size: 12px;
+  font-size: 13px;
   cursor: pointer;
 }
 
@@ -105,7 +105,21 @@
 .monster-kind-3 { color: #ffda65; border-color: #9a8038; }
 
 .drop-data th {
-  top: 211px;
+  top: 217px;
+}
+.drop-data td { vertical-align: middle; }
+.drop-data .drops { align-items: flex-start; }
+.aar-badge {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 2px 5px;
+  border: 1px solid #58716a;
+  border-radius: 3px;
+  color: #9de0b7;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  vertical-align: 1px;
 }
 
 .category-group,
@@ -167,7 +181,7 @@
 
 .category-heading span,
 .type-heading span {
-  margin-left: auto;
+  margin-left: 8px;
   padding: 3px 8px;
   border: 1px solid #35516a;
   border-radius: 999px;
@@ -225,11 +239,12 @@
 
 .equipment-data {
   min-width: 0;
+  table-layout: fixed;
 }
 
-.equipment-data .equipment-name-col { width: 24%; }
-.equipment-data .equipment-effect-col { width: 11%; }
-.equipment-data .equipment-source-col { width: 65%; }
+.equipment-data .equipment-name-col { width: 27%; }
+.equipment-data .equipment-effect-col { width: 25%; }
+.equipment-data .equipment-source-col { width: 48%; }
 
 .equipment-data .effect-cell {
   font-size: 11px;
@@ -409,13 +424,11 @@
   filter: brightness(1.14);
 }
 
-.equipment-data .equipment-name-col { width: 24%; }
-.equipment-data .equipment-effect-col { width: 9%; }
-.equipment-data .equipment-source-col { width: 67%; }
 .equipment-data .source-cell { padding-inline: 8px; }
 .equipment-data .effect-cell { font-size: 15px; }
 .equipment-data .effect-name,
 .equipment-data .unique-name { font-size: 15px; }
+.equipment-data .effect-name[data-item-id] { cursor: help; text-decoration: underline dotted #738ca1; text-underline-offset: 2px; }
 
 .quest-source {
   padding: 5px 0;
@@ -430,6 +443,14 @@
   font-weight: 600;
   line-height: 1.45;
 }
+.source-monster-ref,
+.source-item-ref {
+  color: #d8efff;
+  cursor: help;
+  text-decoration: underline dotted #73d7f5;
+  text-underline-offset: 2px;
+}
+.source-item-ref { cursor: pointer; }
 
 .quest-source__meta {
   color: #8fa6ba;
@@ -501,9 +522,34 @@
 .source-episode .source-entry__rate { font-size: 10px; }
 
 .tooltip {
-  width: min(680px, calc(100vw - 24px));
+  width: max-content;
+  min-width: min(360px, calc(100vw - 16px));
+  max-width: calc(100vw - 16px);
   max-height: none;
   overflow: visible;
+}
+
+.tip-effects > div,
+.tip-unique > div { overflow-wrap: anywhere; }
+
+.drop-special-group {
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #2b4053;
+  border-radius: 5px;
+  background: #111e2b;
+}
+.drop-special-group h4 {
+  margin: 0 0 5px;
+  color: #c8d9e8;
+  font-size: 11px;
+  letter-spacing: .25px;
+}
+.drop-special-group p {
+  margin: 0 0 8px;
+  color: #91a7bb;
+  font-size: 11px;
+  line-height: 1.45;
 }
 
 @media (max-width: 800px) {
@@ -523,12 +569,13 @@
   }
 
   .drop-tab {
-    padding-inline: 8px;
-    font-size: 11px;
+    min-height: 35px;
+    padding-inline: 10px;
+    font-size: 12px;
   }
 
   .drop-data th {
-    top: 211px;
+    top: 217px;
   }
 
   .category-heading {
@@ -575,3 +622,20 @@
 .sub.search-hit{display:block;width:max-content;max-width:100%;padding:2px 4px;margin-left:-4px}
 .item-name-block.search-hit{padding:3px 5px;margin:-3px -5px}
 .star-type.search-hit{display:inline-block;padding:1px 3px}
+.unique-name .mark {
+  padding: 0;
+  border-radius: 0;
+  background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0066ff, #ff00ff);
+  background-size: 240% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  box-shadow: none;
+  text-decoration: underline;
+  text-decoration-color: #f4cf58;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  text-shadow: 0 0 7px rgba(244, 207, 88, .55);
+  animation: rainbow 5s linear infinite;
+}
