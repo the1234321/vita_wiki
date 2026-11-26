@@ -7,7 +7,7 @@
   const detailCache = new Map(), itemMap = new Map(), enemyMap = new Map(), itemNameMap = new Map(), enemyNameMap = new Map();
   const legendaryIds = new Set(['00070E','000D09','000D0B','001D00','001E00','002002','003300','003601','008B05','00C001','010160','010162','010227','0102A9','030E01','03100B']);
   const syntheticUniqueIds = new Set(['00DD0A','008B05','002002','006E02','006E03','00B102','00B101','00DD0B','00070E','002602','002601','000D07','000D09','000D04','000D08','000D06']);
-  const state = { view: 'drops', page: 0, query: '', filters: { ep: '1', diff: '3', unique: 'all' } };
+  const state = { view: 'drops', query: '', filters: { ep: '1', diff: '3', unique: 'all' } };
   const routeMemory = {};
   let index, gacha, bestiaryEnemies, bestiaryPromise, translations = {}, language = localStorage.getItem('wiki-language') || 'en', gachaPromise;
   let uniqueTranslationIndex = null, termTranslationIndex = null, taskItemAliasIndex = null, taskItemAliasLanguage = '', searchDetailsPromise = null;
@@ -211,6 +211,15 @@
     if(!needsMonsterMap)return false;
     try{await ensureBestiary();return true;}catch(error){console.warn('Quest monster previews unavailable',error);return false;}
   }
+  async function refreshTaskSourceRows(mount,items){
+    const taskItems=items.filter(item=>(detailCache.get(item.c.toUpperCase())?.so||[]).some(source=>source.q===1&&source.c));
+    if(!taskItems.length||!await ensureTaskSourceEnemies(taskItems)||!mount.isConnected)return;
+    for(const item of taskItems){
+      const row=mount.querySelector(`[data-row-id="${CSS.escape(item.c.toUpperCase())}"]`);
+      if(!row)continue;
+      const buffer=document.createElement('tbody');buffer.innerHTML=itemRow(item);row.replaceWith(buffer.firstElementChild);
+    }
+  }
   async function setRoute() {
     hideTooltip();
     const was = state.view, next = location.hash.startsWith('#items') ? 'items' : 'drops';
@@ -220,7 +229,6 @@
       const saved = routeMemory[next];
       state.query = saved?.query || ''; search.value = saved?.search || '';
       state.filters = { ...state.filters, ...(saved?.filters || {}) };
-      state.page = 0;
     }
     if(state.view==='drops')await ensureGacha();
     if(language==='cn')await ensureTranslations();
@@ -232,7 +240,7 @@
     } else if(!id&&routeMemory[state.view]?.pendingReturn) {
       const saved=routeMemory[state.view];
       state.query=saved.query||'';search.value=saved.search||'';
-      state.filters={...state.filters,...(saved.filters||{})};state.page=0;saved.pendingReturn=false;
+      state.filters={...state.filters,...(saved.filters||{})};saved.pendingReturn=false;
       render();requestAnimationFrame(()=>window.scrollTo(0,saved.scrollY||0));
     } else if(was!==next&&routeMemory[state.view]?.scrollY!=null) {
       requestAnimationFrame(()=>window.scrollTo(0,routeMemory[state.view].scrollY));
@@ -317,7 +325,6 @@
       <td>${drops.length?`<div class="drops">${drops.map(dropCardHtml).join('')}</div>`:''}${special}</td></tr>`;
     }).join('')}</tbody></table></div>` : `<div class="empty">${t('noDrops','No matching drop pools')}</div>`;
     status.textContent = `${rows.length.toLocaleString()} ${t('monsterGroups','monster groups')}`;
-    $('#pager').replaceChildren();
   }
   function loadDetail(id) {
     id = String(id).toUpperCase(); const shard = id.slice(-1).toLowerCase();
@@ -485,20 +492,19 @@
     await ensureGacha();
     if(state.filters.unique==='all'){
       mount.innerHTML=items.length?equipmentTable(items):`<div class="empty">${t('noItems','No matching equipment')}</div>`;
-      items.forEach(item=>loadDetail(item.c).then(async()=>{
-        await ensureTaskSourceEnemies([item]);
-      }).catch(error=>console.warn(`Could not load details for ${item.c}`,error)).finally(()=>{
-        const row=mount.querySelector(`[data-row-id="${CSS.escape(item.c.toUpperCase())}"]`);
-        if(row){const buffer=document.createElement('tbody');buffer.innerHTML=itemRow(item);row.replaceWith(buffer.firstElementChild);}
-      }));
+      Promise.all(items.map(item=>loadDetail(item.c))).then(async()=>{
+        if(!mount.isConnected)return;
+        mount.innerHTML=items.length?equipmentTable(items):`<div class="empty">${t('noItems','No matching equipment')}</div>`;
+        await refreshTaskSourceRows(mount,items);
+      }).catch(error=>console.warn('Could not load equipment details',error));
       return;
     }
     mount.innerHTML=`<div class="loading-group">${t('loadingDetails','Loading this equipment group…')}</div>`;
     await Promise.all(items.map(item=>loadDetail(item.c)));
-    await ensureTaskSourceEnemies(items);
     if(!mount.isConnected)return;
-            const visible=items.filter(item=>{const hasUnique=uniqueList(item,detailCache.get(item.c.toUpperCase())).length>0;return state.filters.unique==='yes'?hasUnique:!hasUnique;});
+    const visible=items.filter(item=>{const hasUnique=uniqueList(item,detailCache.get(item.c.toUpperCase())).length>0;return state.filters.unique==='yes'?hasUnique:!hasUnique;});
     mount.innerHTML=visible.length?equipmentTable(visible):`<div class="empty">${t('noItems','No matching equipment')}</div>`;
+    await refreshTaskSourceRows(mount,visible);
   }
   function renderItems() {
     const groups=categoryData();
@@ -513,7 +519,6 @@
     }).join(''):`<div class="empty">${t('noItems','No matching equipment')}</div>`;
     const total=[...groups.values()].reduce((n,types)=>n+[...types.values()].reduce((sum,list)=>sum+list.length,0),0);
     status.textContent=`${total.toLocaleString()} ${t('equipmentCount','equipment')}`;
-    $('#pager').replaceChildren();
     el.querySelectorAll('.category-group').forEach(categoryNode=>{
       const category=categoryNode.dataset.categoryGroup;
       categoryNode.open=Boolean(state.query)||openCategories.has(category);
@@ -614,12 +619,14 @@
   }
   async function initialize(){
     try{
-      const indexResponse=await fetch(`${ROOT}index.json`);
+      const indexLoad=fetch(`${ROOT}index.json`);
+      const translationLoad=language==='cn'?ensureTranslations():Promise.resolve();
+      const gachaLoad=location.hash.startsWith('#items')?Promise.resolve():ensureGacha();
+      const [indexResponse]=await Promise.all([indexLoad,translationLoad,gachaLoad]);
       if(!indexResponse.ok)throw Error('Could not load wiki index');
       index=await indexResponse.json();
       index.items.forEach(item=>{itemMap.set(item.c.toUpperCase(),item);if(!itemNameMap.has(item.n))itemNameMap.set(item.n,item);});
       index.enemies.forEach(enemy=>{if(!enemy.k)return;enemyMap.set(enemy.k,enemy);if(enemy.n&&!enemyNameMap.has(enemy.n))enemyNameMap.set(enemy.n,{enemy,form:'normal'});if(enemy.u&&!enemyNameMap.has(enemy.u))enemyNameMap.set(enemy.u,{enemy,form:'ultimate'});});
-      if(language==='cn')await ensureTranslations();
       const validHash=location.hash.startsWith('#items')||location.hash.startsWith('#drops');if(!validHash)history.replaceState(null,'','#drops');
       await setRoute();status.textContent=t('ready','Ready');
       document.querySelectorAll('[data-language]').forEach(button=>button.addEventListener('click',()=>applyLanguage(button.dataset.language).catch(error=>{console.error(error);status.textContent='中文词条读取失败';})));
