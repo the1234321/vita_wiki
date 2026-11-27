@@ -7200,9 +7200,9 @@ Quebbler Gear|奎布勒装备
 Gerard's Mantle|杰拉德披风
 Stealth Suit+|隐身服+
 Divine Filter|神圣滤镜
-Heaven Punisher [Divine]|天堂惩罚者【神圣】
-Heaven Striker [Divine]|天堂强袭者【神圣】
-Mille Marteaux [Divine]|千锤百炼【神圣】
+Heaven Punisher [Divine]|天罚【神圣】
+Heaven Striker [Divine]|天堂冲击【神圣】
+Mille Marteaux [Divine]|天国呼啸【神圣】
 POKIAKI|波基亚基
 Altera Kanon|阿尔特拉加农
 Murderer's Gleam|杀手之光
@@ -7250,7 +7250,7 @@ Parasitic Germ "Pollux"|寄生病菌“波鲁克斯”
 Parasitic Germ "Castor"|寄生病菌“卡斯托尔”
 Baranz Cladding|机甲堡垒外壳
 Bringer Amplifier|使者增幅器
-Bringer Rifle (Omega)|使者来复枪（欧米茄）
+Bringer Rifle (Omega)|混沌骑士枪Ω
 Castor Arms|卡斯托尔臂甲
 Pollux Gungnir|波鲁克斯冈格尼尔
 Marksman's Gear|神射手装备
@@ -7328,13 +7328,13 @@ Engagement Ring|求婚戒指
 Wedding Ring|结婚戒指
 Benevolent Omamori|仁慈护身符
 Flowen's Soul|弗罗文之魂
-Flowen's Sword (True)|弗罗文之剑（真品）
+Flowen's Sword (True)|真·弗罗文大剑
 Twin Photon Claws|双光子爪
 Twin Booma Claws|双棕狂熊爪
 Twin Silence Claws|双寂静爪
 Twin Nei Claws|双妮爪
 Twin Rika Claws|双莉可爪
-Twin Nei Claws (Real)|双妮爪（真品）
+Twin Nei Claws (Real)|真·双妮爪
 Morning Liturgy|晨祷
 Gleaming Punishment|闪耀惩戒
 Rika's Cuirass|莉可胸甲

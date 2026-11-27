@@ -9,7 +9,7 @@
   const syntheticUniqueIds = new Set(['00DD0A','008B05','002002','006E02','006E03','00B102','00B101','00DD0B','00070E','002602','002601','000D07','000D09','000D04','000D08','000D06']);
   const state = { view: 'drops', query: '', filters: { ep: '1', diff: '3', unique: 'all' } };
   const routeMemory = {};
-  let index, gacha, bestiaryEnemies, bestiaryPromise, translations = {}, language = localStorage.getItem('wiki-language') || 'en', gachaPromise;
+  let index, gacha, bestiaryEnemies, bestiaryPromise, bestiaryEnemyOrder = new Map(), translations = {}, language = localStorage.getItem('wiki-language') || 'en', gachaPromise;
   let uniqueTranslationIndex = null, termTranslationIndex = null, taskItemAliasIndex = null, taskItemAliasLanguage = '', searchDetailsPromise = null;
   const openCategories = new Set(), openTypes = new Set();
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
@@ -59,6 +59,15 @@
   const uniqueSourceTranslation = value => {
     if (!uniqueTranslationIndex) uniqueTranslationIndex = buildUniqueTranslationIndex();
     return uniqueTranslationIndex.get(normalizeTranslationKey(value));
+  };
+  const uniqueSourceKey = entry => {
+    if(!entry)return '';
+    const description=entry.description??entry.t;
+    return JSON.stringify([
+      String(entry.name??entry.n??''),
+      String(entry.type??entry.l??''),
+      (Array.isArray(description)?description:description?[description]:[]).map(String)
+    ]);
   };
   const termSourceTranslation = value => {
     if (!termTranslationIndex) termTranslationIndex = buildTermTranslationIndex();
@@ -121,7 +130,13 @@
     const sourceValue=entry?.[sourceKey];
     const source=Array.isArray(sourceValue)?sourceValue.join('\n'):String(sourceValue||'');
     if(language!=='cn')return source;
-    const raw=translations.unique?.[id]?.[index]?.[field];
+    const candidates=translations.unique?.[id];
+    const ordered=Array.isArray(candidates)?candidates:[];
+    // Prefer the raw source signature so appended translations stay attached if upstream reorders entries.
+    const matching=ordered.find(candidate=>candidate?.source&&uniqueSourceKey(candidate.source)===uniqueSourceKey(entry));
+    const positional=ordered[index];
+    const translationEntry=matching||(positional&&!positional.source?positional:null);
+    const raw=translationEntry?.[field];
     const translation=Array.isArray(raw)?raw.join('\n'):String(raw||'').trim();
     if (translation && normalizeTranslationKey(translation)!==normalizeTranslationKey(source)) return translation;
     if (Array.isArray(sourceValue)) return sourceValue.map(line => localizedTerm(line)).join('\n');
@@ -192,6 +207,7 @@
     if(bestiaryEnemies)return bestiaryEnemies;
     if(!bestiaryPromise)bestiaryPromise=fetch(`${ROOT}bestiary.json`).then(response=>{if(!response.ok)throw Error('Bestiary unavailable');return response.json();}).then(data=>{
       bestiaryEnemies=Object.values(data.enemies||{});
+      bestiaryEnemyOrder=new Map(bestiaryEnemies.map((enemy,position)=>[enemy.k,position]));
       for(const source of bestiaryEnemies){
         if(!source.k||enemyMap.has(source.k))continue;
         const enemy={k:source.k,n:source.n||source.k,u:source.u||null,b:Boolean(source.b),x:Boolean(source.x)};
@@ -278,10 +294,9 @@
       if(Number(sourcePool?.p)>0)group.aar=Number(sourcePool.p);
       group.specialGroups=specialGroups;groups.set(source.k,group);
     }
-    return [...groups.values()].filter(group=>group.drops.length||group.specialGroups?.some(section=>section.g?.some(tier=>tier.i?.length))).sort((a,b) => {
-      const form=state.filters.diff==='3'?'ultimate':'normal';
-      return enemyLabel(a.enemy,form).localeCompare(enemyLabel(b.enemy,form));
-    });
+    return [...groups.values()].filter(group=>group.drops.length||group.specialGroups?.some(section=>section.g?.some(tier=>tier.i?.length))).sort((a,b) =>
+      (bestiaryEnemyOrder.get(a.enemy.k) ?? Number.MAX_SAFE_INTEGER) - (bestiaryEnemyOrder.get(b.enemy.k) ?? Number.MAX_SAFE_INTEGER)
+    );
   }
   function specialDropRate(rate,perContainer){
     if(!Array.isArray(rate)||rate.length<2||!Number(rate[1]))return '';

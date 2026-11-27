@@ -2485,7 +2485,33 @@
         "Boxes in Crater West": "陨石坑周边（西部路线）的箱子",
         "Boxes in Desert 1": "地下沙漠１的箱子",
         "Boxes in Desert 2": "地下沙漠２的箱子",
-        "Boxes in Desert 3": "地下沙漠３的箱子"
+        "Boxes in Desert 3": "地下沙漠３的箱子",
+        "Piercing heart": "贯穿之心",
+        "Piercing Foie barrage": "贯穿火球术连射",
+        "A Super rare from Gol Lily and Jaggo Rizona": "超稀有掉落：由Gol Lily和Jaggo Rizona掉落。",
+        "Elemental Bypass reset": "元素穿透冷却重置",
+        "Wave crash": "波浪冲击",
+        "Sustained projectile": "持续弹体",
+        "Twelve-way Lavis waves": "十二向拉维斯波",
+        "Three-way Foie": "三向火球术",
+        "Giant Megid": "巨型死咒术",
+        "Jump dash and blast": "跳跃突进与爆破",
+        "Anti Lv.7": "状态术 Lv.7",
+        "Its special attack casts Anti Lv.7 on you and nearby allies for Anti's TP cost.": "特殊攻击会消耗施放状态术所需的TP，对自己和附近队友施放Lv.7状态术。",
+        "Contrary to its vanilla version, its \"Use\" feature is not active on this server due to how TP operates.": "与原版不同，由于TP机制原因，此服务器禁用了它的“使用”功能。",
+        "Piercing volley": "贯穿齐射",
+        "Held rapid fire": "按住连射",
+        "Javelin throw": "投枪掷击",
+        "Lavis wave": "拉维斯波",
+        "Piercing wave": "贯穿波",
+        "Expanding laser pillars": "扩张式激光柱",
+        "Grants burst": "圣光迸发",
+        "Twin Megid": "双重死咒术",
+        "Megid swings": "死咒挥击",
+        "Flame companion": "火焰伙伴",
+        "Orb companion": "光球伙伴",
+        "Every hit, the special's included, restores 1% of maximum HP.": "每次命中都会恢复最大HP的1%，包括特殊攻击命中。",
+        "Chakram throw": "环刃投掷"
     },
     "unique": {
         "001000": [
@@ -3678,20 +3704,26 @@
         ],
         "000908": [
             {
-                "name": "持续激光",
+                "name": "蓄力射击 II",
                 "type": "独特特殊攻击",
                 "description": [
-                    "普通攻击和重攻击会从火箭发射舱射出3枚追踪火箭。有可攻击目标时，每枚火箭会追踪300单位范围内不同的敌人，各命中一次并造成该次攻击的伤害。",
-                    "按住特殊攻击会从发射舱射出一道激光，射程300单位，持续追踪锁定目标（包括目标高度），遇墙停止。每0.1秒，激光都会击中射线路径上的每名敌人和每个箱子，造成普通攻击伤害且不会射失。",
-                    "每次激光命中消耗最大HP的0.5%（向上取整），但不会使HP低于1点。特殊攻击不能接在普通攻击或重攻击之后发动。"
+                    "普通攻击和重攻击会发射1枚追踪火箭。火箭优先追踪敌人；附近没有敌人时才会追踪箱子。",
+                    "火箭会在碰到第一个敌人或箱子时爆炸，爆炸最多击中5个敌人或箱子。",
+                    "重攻击为蓄力射击，会将你向后推。",
+                    "特殊攻击：蓄力射击 II。发射两枚速度较慢的蓄力追踪火箭，并会将你向后推。不消耗TP，且不能接在普通攻击或重攻击之后发动。",
+                    "每枚蓄力火箭会贯穿最先碰到的2个敌人或箱子，随后发生大型爆炸，最多再击中5个目标。",
+                    "蓄力火箭飞行途中还会引发小型爆炸，每次最多击中5个敌人或箱子。"
                 ],
                 "source": {
-                    "name": "Held laser",
+                    "name": "Charge Shot II",
                     "type": "Unique special",
                     "description": [
-                        "Normal and heavy attacks fire 3 homing rockets from the rocket pod. Each chases a different enemy within 300 units when it can and hits it once for the attack's damage.",
-                        "Hold the special for a 300-unit laser from the pod that follows your lock-on target, height included, and stops at walls. Every 0.1 seconds it hits each enemy and box on its line for normal-attack damage and never misses.",
-                        "Each laser tick costs 0.5% of maximum HP, rounded up, but never takes you below 1 HP. The special cannot be chained from normal or heavy attacks."
+                        "Normal and heavy attacks fire one homing rocket. It goes after enemies first, and boxes only when no enemy is near.",
+                        "The rocket explodes on the first enemy or box it touches, hitting up to 5 enemies or boxes in the blast.",
+                        "The heavy attack is a charged shot that pushes you back.",
+                        "Special attack: Charge Shot II. It fires two slower charged rockets that home like the others, and pushes you back. It costs no TP and cannot be chained from normal or heavy attacks.",
+                        "Each charged rocket pierces the first 2 enemies or boxes it touches, then explodes in a big blast that hits up to 5 more.",
+                        "On the way, each charged rocket sets off small explosions that hit up to 5 enemies or boxes."
                     ]
                 }
             }

@@ -1,10 +1,10 @@
-*.py
 *.bat
 *.webp
 debug*
 logs
 *.log
 history
+*.pyc
 
 # Prerequisites
 *.d
