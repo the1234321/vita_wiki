@@ -4,6 +4,7 @@
 debug*
 logs
 *.log
+history
 
 # Prerequisites
 *.d
