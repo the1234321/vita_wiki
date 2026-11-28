@@ -1,16 +1,9 @@
 {
  "site": "https://alterapso.com",
- "fetched_at": "2026-11-27T13:57:37+00:00",
+ "fetched_at": "2026-11-28T03:29:38+00:00",
  "glossary_version": "71332b1712fe",
  "items": 1214,
- "changed": [
-  "glossary-data/index.json",
-  "glossary-data/d0.json",
-  "glossary-data/d5.json",
-  "glossary-data/d8.json",
-  "glossary-data/bestiary.json",
-  "glossary-data/gacha.json"
- ],
+ "changed": [],
  "images": null,
  "files": [
   {

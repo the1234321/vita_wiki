@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 1,
+  "classes"         : [
+    {
+      "id"        : "HU",
+      "name"      : {"en": "Hunter", "cn": "战士"},
+      "categories": [
+        {
+          "id"               : "hu-class-skills",
+          "insertAfterShared": "shared-stat-modifiers",
+          "name"             : {"en": "Class Skills", "cn": "职业技能"},
+          "items"            : [
+            {
+              "id"         : "war-cry-boost",
+              "name"       : {"en": "War Cry Boost", "cn": "战吼强化"},
+              "description": { "cn": ["E技能增伤2%/4%/6%"] }
+            },
+            {
+              "id"         : "just-guard-counter",
+              "name"       : {"en": "Just Guard Counter", "cn": "精准防御反击"},
+              "description": { "cn": ["防御成功时，对攻击者造成重攻击伤害"] }
+            },
+            {
+              "id"         : "survival-pressure",
+              "name"       : {"en": "Survival Pressure", "cn": "生存压力"},
+              "description": { "cn": ["房间内敌人数量在3-60个时，攻速增加20%"] }
+            },
+            {
+              "id"         : "iron-will",
+              "name"       : {"en": "Iron Will", "cn": "钢铁意志"},
+              "description": { "cn": ["受到致命伤时，HP只降低到1，并持续15秒无敌", "改效果有300秒内置冷却CD"] }
+            },
+            {
+              "id"         : "vampiric-strike",
+              "name"       : {"en": "Vampiric Strike", "cn": "吸血打击"},
+              "description": { "cn": ["E技能期间，自动回复敌人造成伤害5%的HP"] }
+            },
+            {
+              "id"         : "just-guard-boost",
+              "name"       : {"en": "Just Guard Boost", "cn": "精准防御强化"},
+              "description": { "cn": ["防御成功时，自动释放强攻术和强体术，不消耗TP"] }
+            },
+            {
+              "id"         : "just-guard-dash",
+              "name"       : {"en": "Just Guard Dash", "cn": "精准防御冲刺"},
+              "description": { "cn": ["双击防御键触发翻滚", "0.2秒无敌帧，之后按住防御可冲刺", "冷却时间1.5秒"] }
+            },
+            {
+              "id"         : "mate-rations",
+              "name"       : {"en": "Mate Rations", "cn": "恢复道具补给"},
+              "description": { "cn": ["HP不足30%时，自动使用HP回复药", "消耗顺序：小/中/大"] }
+            },
+            {
+              "id"         : "absolute-war-cry",
+              "name"       : {"en": "Absolute War Cry", "cn": "绝对战吼"},
+              "description": { "cn": ["E技能期间，根据完美防御时机，大幅减伤 "] }
+            },
+            {
+              "id"         : "guard-safety",
+              "name"       : {"en": "Guard Safety", "cn": "防御保障"},
+              "description": { "cn": ["防御时获得1/2/3秒无敌"] }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id"        : "RA",
+      "name"      : {"en": "Ranger", "cn": "枪手"},
+      "categories": [
+        {
+          "id"               : "ra-class-skills",
+          "insertAfterShared": "shared-stat-modifiers",
+          "name"             : {"en": "Class Skills", "cn": "职业技能"},
+          "items"            : [
+            {
+              "id"         : "roll-mastery",
+              "name"       : {"en": "Roll Mastery", "cn": "翻滚精通"},
+              "description": {
+                "cn": ["翻滚冷却时间-0.3/0.6/1", "翻滚冷却时间受回避力影响，逐级降低", "翻滚冷却时间最低可降至0.5秒"]
+              }
+            },
+            {
+              "id"         : "blight-blast",
+              "name"       : {"en": "Blight Blast", "cn": "弱化爆发"},
+              "description": { "cn": ["E技能范围+10%/20%/30%"] }
+            },
+            {
+              "id"         : "trap-and-tricks",
+              "name"       : {"en": "Trap and Tricks", "cn": "陷阱技巧"},
+              "description": { "cn": ["机器人放陷阱时，会让E技能冷却时间-1"] }
+            },
+            {
+              "id"         : "vorter",
+              "name"       : {"en": "Vorter", "cn": "震荡爆炸"},
+              "description": { "cn": ["E技能让敌人聚拢，精英怪和BOSS无效"] }
+            },
+            {
+              "id"         : "stealth-mode",
+              "name"       : {"en": "Stealth Mode", "cn": "潜行模式"},
+              "description": { "cn": ["E技能能让敌人看不到你，持续7秒"] }
+            },
+            {
+              "id"         : "trap-fest",
+              "name"       : {"en": "Trap Fest", "cn": "陷阱盛宴"},
+              "description": {
+                "cn": [
+                  "陷阱冷却时间减半",             "陷阱爆炸时会影响敌人所有部位", "敌人抗性降低50%",
+                  "E技能释放时会补充2个陷阱"
+                ]
+              }
+            },
+            {
+              "id"         : "dodge-through",
+              "name"       : {"en": "Dodge Through", "cn": "闪避穿行"},
+              "description": { "cn": ["翻滚可以越过敌人"] }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id"        : "FO",
+      "name"      : {"en": "Force", "cn": "法师"},
+      "categories": [
+        {
+          "id"               : "fo-class-skills",
+          "insertAfterShared": "shared-stat-modifiers",
+          "name"             : {"en": "Class Skills", "cn": "职业技能"},
+          "items"            : [
+            {
+              "id"         : "mriage-mastery",
+              "name"       : {"en": "Mriage Mastery", "cn": "传送精通"},
+              "description": { "cn": ["闪现冷却时间-0.3/0.6/1秒", "角色回避值达到1500以上时，闪现无CD"] }
+            },
+            {
+              "id"         : "mriage-range",
+              "name"       : {"en": "Mriage Range", "cn": "传送范围"},
+              "description": { "cn": ["闪现距离+10%/20%/30%"] }
+            },
+            {
+              "id"         : "boost-style",
+              "name"       : {"en": "Boost Style", "cn": "强化风格"},
+              "description": { "cn": ["强攻术/强体术 可同时释放", "经验值单独算"] }
+            },
+            {
+              "id"         : "debuff-style",
+              "name"       : {"en": "Debuff Style", "cn": "弱化风格"},
+              "description": { "cn": ["降攻术/降防术 可同时释放", "经验值单独算"] }
+            },
+            {
+              "id"         : "heal-style",
+              "name"       : {"en": "Heal Style", "cn": "治疗风格"},
+              "description": { "cn": ["圣泉术/状态术 可同时释放"] }
+            },
+            {
+              "id"         : "bypass-grants-style",
+              "name"       : {"en": "Bypass Grants Style", "cn": "圣光支路"},
+              "description": { "cn": ["E技能期间，圣光术可同时打击三目标"] }
+            },
+            {
+              "id"         : "bypass-megid-style",
+              "name"       : {"en": "Bypass Megid Style", "cn": "死咒支路"},
+              "description": { "cn": ["E技能期间，死咒威力 随角色精神力提升"] }
+            },
+            {
+              "id"         : "bypass-pb-charge",
+              "name"       : {"en": "Bypass PB Charge", "cn": "PB充能支路"},
+              "description": { "cn": ["E技能期间，每0.1秒涨0.25%PB", "可与其他PB增幅叠加"] }
+            },
+            {
+              "id"         : "fluid-rations",
+              "name"       : {"en": "Fluid Rations", "cn": "流体补给"},
+              "description": { "cn": ["TP不足30%时，自动吃背包里的TP恢复药", "消耗顺序：小/中/大"] }
+            },
+            {
+              "id"         : "cane-plus",
+              "name"       : {"en": "Cane Plus", "cn": "短杖强化"},
+              "description": { "cn": ["手杖攻速提高60%"] }
+            },
+            {
+              "id"         : "rod-plus",
+              "name"       : {"en": "Rod Plus", "cn": "长杖强化"},
+              "description": { "cn": ["长杖攻速提高哦60%"] }
+            },
+            {
+              "id"         : "wand-plus",
+              "name"       : {"en": "Wand Plus", "cn": "魔杖强化"},
+              "description": { "cn": ["魔杖攻速提供高60%"] }
+            },
+            {
+              "id"         : "card-plus",
+              "name"       : {"en": "Card Plus", "cn": "卡片强化"},
+              "description": { "cn": ["卡片攻速提高60%"] }
+            },
+            {
+              "id"         : "weapon-synergy",
+              "name"       : {"en": "Weapon Synergy", "cn": "武器协同"},
+              "description": { "cn": ["法系武器命中时，降低E技能冷却时间0.1秒", "TP全满时无效"] }
+            },
+            {
+              "id"         : "dodge-through",
+              "name"       : {"en": "Dodge Through", "cn": "闪避穿行"},
+              "description": { "cn": ["闪现可穿越怪物"] }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fragmentShop"    : {
+    "id"        : "SHOP",
+    "name"      : {"en": "Shard Shop", "cn": "碎片商店"},
+    "categories": [
+      {
+        "id"   : "tag-triggers",
+        "name" : {"en": "Tag Triggers", "cn": "玛古触发器"},
+        "items": [
+          {
+            "id"         : "trigger-inv-boss",
+            "name"       : {"en": "Mag Trigger: INV-BOSS", "cn": "玛古触发器：首领战无敌"},
+            "price"      : 30,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "trigger-sd-boss",
+            "name"       : {"en": "Mag Trigger: SD-BOSS", "cn": "玛古触发器：首领战强攻与强体"},
+            "price"      : 30,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "trigger-res-boss",
+            "name"       : {"en": "Mag Trigger: RES-BOSS", "cn": "玛古触发器：首领战圣泉术"},
+            "price"      : 30,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "trigger-inv-hp",
+            "name"       : {"en": "Mag Trigger: INV-HP", "cn": "玛古触发器：低HP时无敌"},
+            "price"      : 30,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "trigger-sd-hp",
+            "name"       : {"en": "Mag Trigger: SD-HP", "cn": "玛古触发器：低HP时强攻与强体"},
+            "price"      : 30,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "trigger-res-hp",
+            "name"       : {"en": "Mag Trigger: RES-HP", "cn": "玛古触发器：低HP时圣泉术"},
+            "price"      : 30,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "trigger-inv-pb",
+            "name"       : {"en": "Mag Trigger: INV-PB", "cn": "玛古触发器：光子爆发槽满时无敌"},
+            "price"      : 30,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "trigger-sd-pb",
+            "name"       : {"en": "Mag Trigger: SD-PB", "cn": "玛古触发器：光子爆发槽满时强攻与强体"},
+            "price"      : 30,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "trigger-res-pb",
+            "name"       : {"en": "Mag Trigger: RES-PB", "cn": "玛古触发器：光子爆发槽满时圣泉术"},
+            "price"      : 30,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          }
+        ]
+      },
+      {
+        "id"   : "tag-pb-tools",
+        "name" : {"en": "Tag PB Tools", "cn": "玛古PB装置"},
+        "items": [
+          {
+            "id"         : "pb-device-farlla",
+            "name"       : {"en": "PB Device: Farlla", "cn": "光子爆发装置：蛇"},
+            "price"      : 15,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "pb-device-estlla",
+            "name"       : {"en": "PB Device: Estlla", "cn": "光子爆发装置：海豚"},
+            "price"      : 15,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "pb-device-golla",
+            "name"       : {"en": "PB Device: Golla", "cn": "光子爆发装置：鹿"},
+            "price"      : 15,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "pb-device-pilla",
+            "name"       : {"en": "PB Device: Pilla", "cn": "光子爆发装置：神像"},
+            "price"      : 15,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "pb-device-leilla",
+            "name"       : {"en": "PB Device: Leilla", "cn": "光子爆发装置：女神"},
+            "price"      : 15,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          },
+          {
+            "id"         : "pb-device-my",
+            "name"       : {"en": "PB Device: M/Y", "cn": "光子爆发装置：双子"},
+            "price"      : 15,
+            "description": { "cn": ["对100级以上玛古使用"] }
+          }
+        ]
+      },
+      {
+        "id"   : "tag-cells",
+        "name" : {"en": "Tag Cells", "cn": "玛古套件"},
+        "items": [
+          {
+            "id"         : "stealth-kit",
+            "name"       : {"en": "Stealth Kit", "cn": "隐身套件"},
+            "price"      : 50,
+            "description": {"cn": ["可让50+级第三进化的MAG隐身，使用后保留所有属性","该套件可重复使用"]}
+          },
+          { "id": "mag-kit", "name": {"en": "Mag Kit", "cn": "玛古套件"}, "price": 30, "description": {"cn": []} },
+          {
+            "id"         : "tapas-kit",
+            "name"       : {"en": "Tapas Kit", "cn": "塔帕斯套件"},
+            "price"      : 30,
+            "description": {"cn": ["可让50+级第三进化MAG进化为本形态外观，保留所有属性"]}
+          },
+          {
+            "id"         : "namuci-kit",
+            "name"       : {"en": "Namuci Kit", "cn": "那牟西套件"},
+            "price"      : 30,
+            "description": {"cn": ["可让50+级第三进化MAG进化为本形态外观，保留所有属性"]}
+          },
+          {
+            "id"         : "durga-kit",
+            "name"       : {"en": "Durga Kit", "cn": "杜尔迦套件"},
+            "price"      : 30,
+            "description": {"cn": ["可让50+级第三进化MAG进化为本形态外观，保留所有属性"]}
+          },
+          {
+            "id"         : "garuda-kit",
+            "name"       : {"en": "Garuda Kit", "cn": "迦娄罗套件"},
+            "price"      : 30,
+            "description": {"cn": ["可让50+级第三进化MAG进化为本形态外观，保留所有属性"]}
+          },
+          {
+            "id"         : "marica-kit",
+            "name"       : {"en": "Marica Kit", "cn": "摩利支天套件"},
+            "price"      : 30,
+            "description": {"cn": ["可让50+级第三进化MAG进化为本形态外观，保留所有属性"]}
+          },
+          { "id": "kama-kit", "name": {"en": "Kama Kit", "cn": "迦摩套件"}, "price": 30, "description": {"cn": []} },
+          {
+            "id"         : "kabanda-kit",
+            "name"       : {"en": "Kabanda Kit", "cn": "迦般达套件"},
+            "price"      : 30,
+            "description": {"cn": ["可让50+级第三进化MAG进化为本形态外观，保留所有属性"]}
+          },
+          { "id": "soma-kit", "name": {"en": "Soma Kit", "cn": "苏摩套件"}, "price": 30, "description": {"cn": []} },
+          {
+            "id"         : "ushasu-kit",
+            "name"       : {"en": "Ushasu Kit", "cn": "乌莎斯套件"},
+            "price"      : 30,
+            "description": {"cn": ["可让50+级第三进化MAG进化为本形态外观，保留所有属性"]}
+          },
+          {
+            "id"         : "varaha-kit",
+            "name"       : {"en": "Varaha Kit", "cn": "伐罗珂套件"},
+            "price"      : 30,
+            "description": {"cn": ["可让50+级第三进化MAG进化为本形态外观，保留所有属性"]}
+          },
+          { "id": "yaksa-kit", "name": {"en": "Yaksa Kit", "cn": "夜叉套件"}, "price": 30, "description": {"cn": ["可让50+级第三进化MAG进化为本形态外观，保留所有属性"]} }
+        ]
+      },
+      {
+        "id"   : "feed-devices",
+        "name" : {"en": "Feed Devices", "cn": "喂养装置"},
+        "items": [
+          {
+            "id"         : "feed-device-def",
+            "name"       : {"en": "Mag Feed Device: DEF +5", "cn": "玛古喂食装置：防御 +5"},
+            "price"      : 5,
+            "description": {"cn": ["得到对应MAG喂养装置"]}
+          },
+          {
+            "id"         : "feed-device-pow",
+            "name"       : {"en": "Mag Feed Device: POW +5", "cn": "玛古喂食装置：力量 +5"},
+            "price"      : 5,
+            "description": {"cn": ["得到对应MAG喂养装置"]}
+          },
+          {
+            "id"         : "feed-device-dex",
+            "name"       : {"en": "Mag Feed Device: DEX +5", "cn": "玛古喂食装置：敏捷 +5"},
+            "price"      : 5,
+            "description": {"cn": ["得到对应MAG喂养装置"]}
+          },
+          {
+            "id"         : "feed-device-mnd",
+            "name"       : {"en": "Mag Feed Device: MND +5", "cn": "玛古喂食装置：精神 +5"},
+            "price"      : 5,
+            "description": {"cn": ["得到对应MAG喂养装置"]}
+          }
+        ]
+      },
+      {
+        "id"   : "misc",
+        "name" : {"en": "Misc", "cn": "其他"},
+        "items": [
+          {
+            "id"         : "trigger-reset-boss",
+            "name"       : {"en": "Mag Trigger: RESET-BOSS", "cn": "玛古触发器：重置首领战效果"},
+            "price"      : 1,
+            "description": {"cn": ["需要100+级MAG，首领战效果改为原版效果"]}
+          },
+          {
+            "id"         : "trigger-reset-hp",
+            "name"       : {"en": "Mag Trigger: RESET-HP", "cn": "玛古触发器：重置低HP效果"},
+            "price"      : 1,
+            "description": {"cn": ["需要100+级MAG，低HP效果改为原版效果"]}
+          },
+          {
+            "id"         : "trigger-reset-pb",
+            "name"       : {"en": "Mag Trigger: RESET-PB", "cn": "玛古触发器：重置光子爆发槽满时效果"},
+            "price"      : 1,
+            "description": {"cn": ["需要100+级MAG，光子爆发槽满时效果改为原版效果"]}
+          },
+          {
+            "id"         : "mag-initialize",
+            "name"       : {"en": "Mag Initialize", "cn": "玛古初始化器"},
+            "price"      : 10,
+            "description": {"cn": ["重置任意MAG的四属性数值为0，其他属性不变"]}
+          }
+        ]
+      }
+    ]
+  },
+  "casino": {
+    "id": "CASINO",
+    "name": { "en": "Casino", "cn": "赌场" },
+    "categories": [
+      {
+        "id": "coin-exchange",
+        "name": { "en": "Coin Exchange", "cn": "赌币兑换" },
+        "items": [
+          { "id": "daily-coins", "name": { "en": "Daily Coins", "cn": "每日赌币" }, "status": { "en": "Ready", "cn": "可领取" }, "description": { "cn": ["每天可领取一次"] } },
+          { "id": "photon-shards-daily", "name": { "en": "Photon Shards", "cn": "光子碎片" }, "status": { "en": "0/50 today", "cn": "今日 0/50" }, "description": { "cn": ["消耗1光子碎片，购买5赌币","每天限50次"] } },
+          { "id": "exchange-meseta", "name": { "en": "Exchange Meseta", "cn": "兑换梅塞塔" }, "status": { "en": "500 left this week", "cn": "本周剩余 500" }, "description": { "cn": ["消耗美赛塔购买赌币,每周限500次"] } }
+        ]
+      },
+      {
+        "id": "coin-purchase",
+        "name": { "en": "Coin Purchase", "cn": "赌币购买" },
+        "items": [
+          { "id": "yasminkov-9000m-charge", "name": { "en": "Yasminkov 9000M [Charge] Hit 5-50%", "cn": "雅斯米诺科夫9000M【销金】命中 5-50%" }, "price": 300, "description": { "cn": [] } },
+          { "id": "gunluster-charge", "name": { "en": "Gunluster [Charge] Hit 30%", "cn": "枪光刃【销金】命中 30%" }, "price": 150, "description": { "cn": [] } },
+          { "id": "vulcan-charge", "name": { "en": "Vulcan [Charge] Hit 30%", "cn": "音速机枪【销金】命中 30%" }, "price": 75, "description": { "cn": [] } },
+          { "id": "arms-charge", "name": { "en": "Arms [Charge] Hit 30%", "cn": "军用散弹枪【销金】命中 30%" }, "price": 75, "description": { "cn": [] } },
+          { "id": "calibur-charge", "name": { "en": "Calibur [Charge] Hit 30%", "cn": "勇者大剑【销金】命中 30%" }, "price": 75, "description": { "cn": [] } },
+          { "id": "gungnir-charge", "name": { "en": "Gungnir [Charge] Hit 30%", "cn": "战神长刀【销金】命中 30%" }, "price": 75, "description": { "cn": [] } },
+          { "id": "photon-crystal-x1", "name": { "en": "Photon Crystal ×1", "cn": "光子水晶 PC ×1" }, "price": 10, "availability": { "en": "Daily", "cn": "每日限购" }, "description": { "cn": [] } },
+          { "id": "photon-shard-x5", "name": { "en": "Photon Shard ×5", "cn": "光子碎片 ×5" }, "price": 10, "availability": { "en": "Daily", "cn": "每日限购" }, "description": { "cn": [] } },
+          { "id": "photon-shard-x35", "name": { "en": "Photon Shard ×35", "cn": "光子碎片 ×35" }, "price": 60, "availability": { "en": "Weekly", "cn": "每周限购" }, "description": { "cn": [] } },
+          { "id": "inventory-expansion", "name": { "en": "Inventory Expansion", "cn": "背包扩容 +10" }, "price": 250, "availability": { "en": "Once", "cn": "账号限购一次" }, "description": { "cn": [] } },
+          { "id": "mag-feed-def-x5", "name": { "en": "Mag Feed DEF ×5", "cn": "玛古喂食装置：防御 ×5" }, "price": 10, "description": { "cn": [] } },
+          { "id": "mag-feed-pow-x5", "name": { "en": "Mag Feed POW ×5", "cn": "玛古喂食装置：力量 ×5" }, "price": 10, "description": { "cn": [] } },
+          { "id": "mag-feed-dex-x5", "name": { "en": "Mag Feed DEX ×5", "cn": "玛古喂食装置：敏捷 ×5" }, "price": 10, "description": { "cn": [] } },
+          { "id": "mag-feed-mnd-x5", "name": { "en": "Mag Feed MND ×5", "cn": "玛古喂食装置：精神 ×5" }, "price": 10, "description": { "cn": [] } },
+          { "id": "raygun-charge", "name": { "en": "Raygun [Charge] Hit 30%", "cn": "原子光枪【销金】命中 30%" }, "price": 25, "description": { "cn": [] } },
+          { "id": "gladius-charge", "name": { "en": "Gladius [Charge] Hit 30%", "cn": "决斗光剑【销金】命中 30%" }, "price": 25, "description": { "cn": [] } },
+          { "id": "cane-charge", "name": { "en": "Cane [Charge] Hit 30%", "cn": "手杖【销金】命中 30%" }, "price": 25, "description": { "cn": [] } },
+          { "id": "ripper-charge", "name": { "en": "Ripper [Charge] Hit 30%", "cn": "暗杀匕首【销金】命中 30%" }, "price": 35, "description": { "cn": [] } },
+          { "id": "laser-charge", "name": { "en": "Laser [Charge] Hit 30%", "cn": "脉冲步枪【销金】命中 30%" }, "price": 35, "description": { "cn": [] } },
+          { "id": "wand-charge", "name": { "en": "Wand [Charge] Hit 30%", "cn": "魔杖【销金】命中 30%" }, "price": 35, "description": { "cn": [] } },
+          { "id": "rod-charge", "name": { "en": "Rod [Charge] Hit 30%", "cn": "长杖【销金】命中 30%" }, "price": 50, "description": { "cn": [] } },
+          { "id": "twin-gladius-charge", "name": { "en": "Twin Gladius [Charge] Hit 5-50%", "cn": "双决斗光剑【销金】命中 5-50%" }, "price": 300, "description": { "cn": [] } },
+          { "id": "meseton-flute", "name": { "en": "Meseton Flute", "cn": "梅塞顿笛" }, "price": 200, "availability": { "en": "Weekly", "cn": "每周限购" }, "description": { "cn": [] } },
+          { "id": "engagement-ring", "name": { "en": "Engagement Ring", "cn": "求婚戒指" }, "price": 100, "description": { "cn": [] } }
+        ]
+      }
+    ]
+  },
+  "sharedCategories": [
+    {
+      "id"   : "shared-stat-modifiers",
+      "name" : {"en": "Stat Modifiers", "cn": "属性修正"},
+      "items": [
+        {
+          "id"         : "atp-cap",
+          "name"       : {"en": "ATP Cap", "cn": "攻击力上限"},
+          "description": { "cn": ["攻击力上限 +50/100/150", "攻击力 +25/50/75"] }
+        },
+        {
+          "id"         : "dfp-cap",
+          "name"       : {"en": "DFP Cap", "cn": "防御力"},
+          "description": { "cn": ["防御力上限 +10/20/30", "防御力 +5/10/20"] }
+        },
+        {
+          "id"         : "ata-cap",
+          "name"       : {"en": "ATA Cap", "cn": "命中力"},
+          "description": { "cn": ["命中力上限 +2/4/6", "命中力 +2/4/6"] }
+        },
+        {
+          "id"         : "mst-cap",
+          "name"       : {"en": "MST Cap", "cn": "精神力"},
+          "description": { "cn": ["精神力上限 +50/100/150", "精神力 +25/50/75"] }
+        },
+        {
+          "id"         : "evp-cap",
+          "name"       : {"en": "EVP Cap", "cn": "回避力"},
+          "description": { "cn": ["回避力上限 +50/100/150", "回避力 +25/50/75"] }
+        }
+      ]
+    },
+    {
+      "id"   : "shared-resistances",
+      "name" : {"en": "Resistances", "cn": "异常状态抗性"},
+      "items": [
+        {
+          "id"         : "freeze-cleanser",
+          "name"       : {"en": "Freeze Cleanser", "cn": "冰冻净化"},
+          "description": {
+            "cn": [
+              "冻结效果施加率降低 75%",
+              "包含敌人必定施加的效果及装备附带效果",
+              "解锁该技能时，也需要消耗 2 个匹配的免疫插件"
+            ]
+          }
+        },
+        {
+          "id"         : "paralysis-cleanser",
+          "name"       : {"en": "Paralysis Cleanser", "cn": "麻痹净化"},
+          "description": {
+            "cn": [
+              "麻痹效果施加率降低 75%",
+              "包含敌人必定施加的效果及装备附带效果",
+              "解锁该技能时，也需要消耗 2 个匹配的免疫插件"
+            ]
+          }
+        },
+        {
+          "id"         : "slow-cleanser",
+          "name"       : {"en": "Slow Cleanser", "cn": "减速净化"},
+          "description": {
+            "cn": [
+              "缓速效果施加率降低 75%",
+              "包含敌人必定施加的效果及装备附带效果",
+              "解锁该技能时，也需要消耗 2 个匹配的免疫插件"
+            ]
+          }
+        },
+        {
+          "id"         : "confuse-cleanser",
+          "name"       : {"en": "Confuse Cleanser", "cn": "混乱净化"},
+          "description": {
+            "cn": [
+              "混乱效果施加率降低 75%",
+              "包含敌人必定施加的效果及装备附带效果",
+              "解锁该技能时，也需要消耗 2 个匹配的免疫插件"
+            ]
+          }
+        },
+        {
+          "id"         : "shock-cleanser",
+          "name"       : {"en": "Shock Cleanser", "cn": "感电净化"},
+          "description": {
+            "cn": [
+              "电麻效果施加率降低 75%",
+              "包含敌人必定施加的效果及装备附带效果",
+              "解锁该技能时，也需要消耗 2 个匹配的免疫插件"
+            ]
+          }
+        },
+        {
+          "id"         : "poison-cleanser",
+          "name"       : {"en": "Poison Cleanser", "cn": "中毒净化"},
+          "description": {
+            "cn": [
+              "中毒效果施加率降低 75%",
+              "包含敌人必定施加的效果及装备附带效果",
+              "解锁该技能时，也需要消耗 2 个匹配的免疫插件"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id"   : "shared-utility",
+      "name" : {"en": "Utility", "cn": "实用功能"},
+      "items": [
+        {
+          "id"         : "locked-holster",
+          "name"       : {"en": "Locked Holster", "cn": "装备锁定"},
+          "description": { "cn": ["身上的装备不会被敌人攻击卸下"] }
+        },
+        {
+          "id"         : "meseta-vacuum",
+          "name"       : {"en": "Meseta Vacuum", "cn": "金币吸取"},
+          "description": { "cn": ["掉落的钱，会自动传送进仓库"] }
+        },
+        {
+          "id"         : "grinder-vacuum",
+          "name"       : {"en": "Grinder Vacuum", "cn": "打磨石吸取"},
+          "description": { "cn": ["掉落的打磨石，会自动传送进仓库"] }
+        },
+        {
+          "id"         : "material-vacuum",
+          "name"       : {"en": "Material Vacuum", "cn": "素材吸取"},
+          "description": { "cn": ["掉落的能力药，会自动传送进仓库"] }
+        },
+        {
+          "id"         : "drop-vacuum",
+          "name"       : {"en": "Drop Vacuum", "cn": "PD吸取"},
+          "description": { "cn": ["掉落的光子微晶PD，会自动传送进仓库"] }
+        },
+        {
+          "id"         : "shard-vacuum",
+          "name"       : {"en": "Shard Vacuum", "cn": "碎片吸取"},
+          "description": { "cn": ["掉落的光子碎片，会自动传送进仓库"] }
+        },
+        {
+          "id"         : "crystal-vacuum",
+          "name"       : {"en": "Crystal Vacuum", "cn": "PC吸取"},
+          "description": { "cn": ["掉落的光子水晶PC，会自动传送进仓库"] }
+        },
+        {
+          "id"         : "mag-feed-vacuum",
+          "name"       : {"en": "Mag Feed Vacuum", "cn": "MAG喂养道具吸取"},
+          "description": { "cn": ["掉落的MAG装置，会自动传送进仓库"] }
+        },
+        {
+          "id"         : "item-scanner",
+          "name"       : {"en": "Item Scanner", "cn": "道具扫描器"},
+          "description": { "cn": ["地板上的掉落物会显示出名字"] }
+        },
+        {
+          "id"         : "scape-doll-collector",
+          "name"       : {"en": "Scape Doll Collector", "cn": "替身人偶收集器"},
+          "description": { "cn": ["掉落的替身人偶，会自动传送进仓库"] }
+        },
+        {
+          "id"         : "scape-doll-auto-refill",
+          "name"       : {"en": "Scape Doll Auto Refill", "cn": "替身人偶自动补充"},
+          "description": { "cn": ["每次回城，会自动从仓库补充替身人偶"] }
+        }
+      ]
+    },
+    {
+      "id"   : "shared-tag-pb",
+      "name" : {"en": "Tag & PB", "cn": "Tag与PB"},
+      "items": [
+        {
+          "id"         : "synchro-support",
+          "name"       : {"en": "Synchro Support", "cn": "同步支援"},
+          "description": { "cn": ["永远保持120同步率"] }
+        },
+        {
+          "id"         : "attack-conversion",
+          "name"       : {"en": "Attack Conversion", "cn": "攻击转换"},
+          "description": { "cn": ["根据攻击力，提高PB增长率"] }
+        },
+        {
+          "id"         : "resistance-pierce",
+          "name"       : {"en": "Resistance Pierce", "cn": "抗性穿透"},
+          "description": { "cn": ["光子爆发造成伤害时，会忽略敌人30%全抗性"] }
+        },
+        {
+          "id"         : "pb-charge-boost",
+          "name"       : {"en": "PB Charge Boost", "cn": "PB充能提升"},
+          "description": { "cn": ["PB增长率翻倍"] }
+        },
+        {
+          "id"         : "after-blast-boost",
+          "name"       : {"en": "After Blast Boost", "cn": "爆发后强化"},
+          "description": { "cn": ["任意光子爆发后", "所有伤害增伤15%", "持续120秒"] }
+        },
+        {
+          "id"         : "farlla-afterburn",
+          "name"       : {"en": "Farlla Afterburn", "cn": "蛇环余烬"},
+          "description": { "cn": ["蛇PB，会持续燃烧敌人5秒，每秒15%总伤害"] }
+        },
+        {
+          "id"         : "estlla-blight",
+          "name"       : {"en": "Estlla Blight", "cn": "海豚枯萎"},
+          "description": { "cn": ["海豚PB，对被击中的敌人施加特殊降防术"] }
+        },
+        {
+          "id"         : "golla-storm",
+          "name"       : {"en": "Golla Storm", "cn": "神鹿风暴"},
+          "description": { "cn": ["鹿PB，麻痹附近敌人，范围相当于20级--"] }
+        },
+        {
+          "id"         : "pilla-chaos",
+          "name"       : {"en": "Pilla Chaos", "cn": "神像混沌"},
+          "description": { "cn": ["神像PB，混乱附近敌人，范围相当于20级--"] }
+        },
+        {
+          "id"         : "Leilla-Iedica",
+          "name"       : {"en": "Leilla Iedica", "cn": "女神疗愈"},
+          "description": { "cn": ["女神PB，释放超级圣泉术状态术", "每0.05秒回1TP，持续30秒"] }
+        },
+        {
+          "id"         : "lk-jz",
+          "name"       : {"en": "L&K J/Z", "cn": "双子附加"},
+          "description": { "cn": ["双子PB，额外释放20级--"] }
+        }
+      ]
+    },
+    {
+      "id"   : "shared-enhancements",
+      "name" : {"en": "Enhancements", "cn": "强化"},
+      "items": [
+        {
+          "id"         : "dodge-safety",
+          "name"       : {"en": "Dodge Safety ", "cn": "闪避保障 (部分职业限定)"},
+          "description": { "cn": ["翻滚的无敌时间+0.03/0.06/0.09/0.12/0.15秒"] }
+        },
+        {
+          "id"         : "exp-booster",
+          "name"       : {"en": "EXP Booster", "cn": "经验值提升"},
+          "description": { "cn": ["获得经验值 +20%/40%/60%/80%/100%"] }
+        },
+        {
+          "id"         : "meseta-booster",
+          "name"       : {"en": "Meseta Booster", "cn": "金币提升"},
+          "description": { "cn": ["获得美赛塔 +20%/40%/60%/80%/100%"] }
+        },
+        {
+          "id"         : "technique-booster",
+          "name"       : {"en": "Technique Booster", "cn": "法术强化"},
+          "description": { "cn": ["强制升级法术等级"] }
+        }
+      ]
+    }
+  ],
+  "entryTemplate"   : {
+    "category": { "id": "category-id", "name": {"en": "Category name", "cn": "分类中文名"}, "items": [] },
+    "item"    : {
+      "id"         : "skill-id",
+      "name"       : {"en": "Skill name", "cn": "技能中文名"},
+      "description": { "cn": ["描述第1行", "描述第2行"] }
+    }
+  }
+}

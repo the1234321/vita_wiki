@@ -7,9 +7,9 @@
   const detailCache = new Map(), itemMap = new Map(), enemyMap = new Map(), itemNameMap = new Map(), enemyNameMap = new Map();
   const legendaryIds = new Set(['00070E','000D09','000D0B','001D00','001E00','002002','003300','003601','008B05','00C001','010160','010162','010227','0102A9','030E01','03100B']);
   const syntheticUniqueIds = new Set(['00DD0A','008B05','002002','006E02','006E03','00B102','00B101','00DD0B','00070E','002602','002601','000D07','000D09','000D04','000D08','000D06']);
-  const state = { view: 'drops', query: '', filters: { ep: '1', diff: '3', unique: 'all' } };
+  const state = { view: 'drops', query: '', filters: { ep: '1', diff: '3', unique: 'all' }, skillClass: 'HU', skillCategory: '', skillItem: '' };
   const routeMemory = {};
-  let index, gacha, bestiaryEnemies, bestiaryPromise, bestiaryEnemyOrder = new Map(), translations = {}, language = localStorage.getItem('wiki-language') || 'en', gachaPromise;
+  let index, gacha, bestiaryEnemies, bestiaryPromise, bestiaryEnemyOrder = new Map(), skillData, skillPromise, translations = {}, language = localStorage.getItem('wiki-language') || 'en', gachaPromise;
   let uniqueTranslationIndex = null, termTranslationIndex = null, taskItemAliasIndex = null, taskItemAliasLanguage = '', searchDetailsPromise = null;
   const openCategories = new Set(), openTypes = new Set();
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
@@ -175,15 +175,18 @@
     render();
   }
   function configureNav() {
-    $('#title').textContent = state.view === 'drops' ? t('dropTitle', 'Drop Table') : t('itemTitle', 'Equipment Database');
-    $('#subtitle').textContent = state.view === 'drops'
-      ? t('dropSubtitle', 'Search drops by episode, difficulty, and monster.')
-      : t('itemSubtitle', 'Browse equipment by category, type, and name.') ;
+    const titles={drops:t('dropTitle','Drop Table'),items:t('itemTitle','Equipment Database'),skills:language==='cn'?'技能&商店':'Skills & Shops'};
+    const subtitles={drops:t('dropSubtitle','Search drops by episode, difficulty, and monster.'),items:t('itemSubtitle','Browse equipment by category, type, and name.'),skills:language==='cn'?'按职业、分类和技能查看中英文说明与碎片费用。':'Browse skill descriptions and shard costs by class and category.'};
+    $('#title').textContent=titles[state.view];
+    $('#subtitle').textContent=subtitles[state.view];
     document.querySelectorAll('[data-route]').forEach(a => a.classList.toggle('active', a.dataset.route === state.view));
     document.querySelector('[data-route="drops"]').innerHTML = `${t('dropTitle','Drop Table')} <small>DROP TABLE</small>`;
     document.querySelector('[data-route="items"]').innerHTML = `${t('itemNav','Equipment')} <small>ITEM DATABASE</small>`;
+    document.querySelector('[data-route="skills"]').innerHTML = `${language==='cn'?'技能&商店':'Skills & Shops'} <small>SKILLS &amp; SHOPS</small>`;
     document.querySelector('.language-switcher').setAttribute('aria-label', t('language','Language'));
     search.placeholder = t('searchPlaceholder', 'Search monsters, items, or IDs…');
+    $('.toolbar').hidden=state.view==='skills';
+    status.hidden=state.view==='skills';
   }
   function filtersUI() {
     const filters = $('#filters');
@@ -202,6 +205,11 @@
     if(gacha)return;
     if(!gachaPromise)gachaPromise=fetch(`${ROOT}gacha.json`).then(response=>{if(!response.ok)throw Error('gacha unavailable');return response.json();}).then(data=>{gacha=data;});
     await gachaPromise;
+  }
+  async function ensureSkillData(){
+    if(skillData)return skillData;
+    if(!skillPromise)skillPromise=fetch('skill.json').then(response=>{if(!response.ok)throw Error('Skill data unavailable');return response.json();}).then(data=>{if(!Array.isArray(data.classes))throw Error('skill.json must contain a classes array');skillData=data;return data;}).catch(error=>{skillPromise=null;throw error;});
+    return skillPromise;
   }
   async function ensureBestiary() {
     if(bestiaryEnemies)return bestiaryEnemies;
@@ -238,7 +246,7 @@
   }
   async function setRoute() {
     hideTooltip();
-    const was = state.view, next = location.hash.startsWith('#items') ? 'items' : 'drops';
+    const was = state.view, next = location.hash.startsWith('#items') ? 'items' : location.hash.startsWith('#skills') ? 'skills' : 'drops';
     if (was !== next) {
       routeMemory[was] = { query: state.query, search: search.value, filters: { ...state.filters }, scrollY: window.scrollY };
       state.view = next;
@@ -572,7 +580,50 @@
       }
     });
   }
-  function render() { if(!index)return; hideTooltip();configureNav();filtersUI();state.view==='drops'?renderDrops():renderItems(); }
+  const bilingual = value => {
+    const en=typeof value==='string'?value:value?.en||'';
+    const cn=typeof value==='object'&&value?value.cn||'':'';
+    return {en,cn,label:language==='cn'?(cn||en):(en||cn)};
+  };
+  function renderSkillTree(){
+    if(!skillData){
+      el.innerHTML=`<div class="empty">${language==='cn'?'正在读取技能树…':'Loading skill tree…'}</div>`;
+      ensureSkillData().then(()=>{if(state.view==='skills')render();}).catch(error=>{el.innerHTML=`<div class="empty">${language==='cn'?'技能数据读取失败，请确认 skill.json 位于页面目录。':'Could not load skill.json from the page directory.'}</div>`;console.error(error);});
+      return;
+    }
+    const classes=skillData.classes;
+    if(!classes.length){el.innerHTML='<div class="empty">skill.json 中尚未添加职业数据。</div>';return;}
+    const sections=[...classes,...(skillData.fragmentShop?[skillData.fragmentShop]:[]),...(skillData.casino?[skillData.casino]:[])];
+    let selectedClass=sections.find(entry=>entry.id===state.skillClass)||classes[0];
+    state.skillClass=selectedClass.id;
+    const isIndependentSection=selectedClass.id==='SHOP'||selectedClass.id==='CASINO';
+    const sharedCategories=isIndependentSection?[]:(Array.isArray(skillData.sharedCategories)?skillData.sharedCategories.map(category=>({...category,shared:true})):[]);
+    const classCategories=Array.isArray(selectedClass.categories)?selectedClass.categories:[];
+    const categories=isIndependentSection?(selectedClass.categories||[]):[...sharedCategories];
+    if(!isIndependentSection)for(const category of classCategories){
+      const anchor=category.insertAfterShared?categories.findIndex(entry=>entry.id===category.insertAfterShared):-1;
+      if(anchor>=0)categories.splice(anchor+1,0,category);
+      else categories.push(category);
+    }
+    let selectedCategory=categories.find(entry=>entry.id===state.skillCategory)||categories[0];
+    state.skillCategory=selectedCategory?.id||'';
+    const skills=selectedCategory&&Array.isArray(selectedCategory.items)?selectedCategory.items:[];
+    let selectedSkill=skills.find(entry=>entry.id===state.skillItem)||skills[0];
+    state.skillItem=selectedSkill?.id||'';
+    const classTabs=sections.map(entry=>{const label=bilingual(entry.name);return `<button type="button" class="skill-class-tab ${entry.id===selectedClass.id?'active':''}" data-skill-class="${esc(entry.id)}"><strong>${esc(entry.id==='SHOP'?'✦':entry.id==='CASINO'?'♠':entry.id)}</strong><span>${esc(label.label)}${label.en&&label.cn?`<small class="skill-alt ${language==='cn'?'skill-english':'skill-chinese'}">${esc(language==='cn'?label.en:label.cn)}</small>`:''}</span></button>`;}).join('');
+    const categoryRows=categories.map(entry=>{const label=bilingual(entry.name);return `<button type="button" class="skill-category ${entry.id===selectedCategory?.id?'active':''}" data-skill-category="${esc(entry.id)}"><span>${esc(label.label||entry.id)}</span>${label.en&&label.cn?`<small class="skill-alt ${language==='cn'?'skill-english':'skill-chinese'}">${esc(language==='cn'?label.en:label.cn)}</small>`:''}</button>`;}).join('');
+    const skillRows=skills.map(entry=>{const label=bilingual(entry.name),availability=bilingual(entry.availability||entry.status).label,price=entry.price!=null?String(entry.price):'',right=[availability,price].filter(Boolean).join(' · ');return `<button type="button" class="skill-entry ${entry.id===selectedSkill?.id?'active':''}" data-skill-item="${esc(entry.id)}"><span>${esc(label.label||entry.id)}</span>${label.en&&label.cn?`<small class="skill-alt ${language==='cn'?'skill-english':'skill-chinese'}">${esc(language==='cn'?label.en:label.cn)}</small>`:''}${right?`<span class="skill-entry-cost">${esc(right)}</span>`:''}</button>`;}).join('');
+    let detailHtml=`<div class="skill-detail-empty">${language==='cn'?'选择一项技能以查看说明。':'Select a skill to view its description.'}</div>`;
+    if(selectedSkill){
+      const name=bilingual(selectedSkill.name),description=selectedSkill.description||{};
+      const chineseLines=Array.isArray(description.cn)?description.cn.filter(line=>String(line).trim()):description.cn?[description.cn]:[];
+      const descriptionHtml=`<section class="skill-detail-block"><h3>${language==='cn'?'技能说明':'Description'}</h3>${chineseLines.map(line=>`<p class="skill-cn">${esc(line)}</p>`).join('')}</section>`;
+      const itemAvailability=bilingual(selectedSkill.availability||selectedSkill.status).label;
+      detailHtml=`<div class="skill-detail-head"><div class="skill-kicker">${esc(bilingual(selectedClass.name).label||selectedClass.id)} · ${esc(bilingual(selectedCategory?.name).label||'')}</div><h2>${esc(name.label||selectedSkill.id)}</h2>${name.en&&name.cn?`<div class="skill-secondary ${language==='cn'?'skill-english':'skill-chinese'}"><span>${language==='cn'?'EN':'中文'}</span>${esc(language==='cn'?name.en:name.cn)}</div>`:''}</div>${selectedSkill.price!=null||itemAvailability?`<div class="skill-cost"><span>${language==='cn'?'价格 / 状态':'Price / Status'}</span><strong>${esc([itemAvailability,selectedSkill.price!=null?selectedSkill.price:null].filter(value=>value!==null&&value!=='').join(' · '))}</strong></div>`:''}${descriptionHtml}`;
+    }
+    el.innerHTML=`<section class="skill-tree"><div class="skill-class-tabs">${classTabs}</div><div class="skill-columns"><aside class="skill-panel skill-category-panel"><header><strong>${language==='cn'?'分类':'Categories'}</strong><span>${esc(bilingual(selectedClass.name).label||selectedClass.id)}</span></header><div class="skill-list">${categoryRows||`<div class="skill-empty">${language==='cn'?'此栏目尚无分类。':'No categories in this section yet.'}</div>`}</div></aside><section class="skill-panel skill-items-panel"><header><strong>${esc(bilingual(selectedCategory?.name).label|| (language==='cn'?'技能项目':'Items'))}</strong><span>${skills.length}</span></header><div class="skill-list">${skillRows||`<div class="skill-empty">${language==='cn'?'此分类暂无项目。':'No entries in this category yet.'}</div>`}</div></section><article class="skill-panel skill-detail-panel"><header><strong>${language==='cn'?'详细内容':'Details'}</strong><span>${esc(selectedSkill?.id||'')}</span></header><div class="skill-detail-content">${detailHtml}</div></article></div></section>`;
+  }
+  function render() { if(!index)return; hideTooltip();configureNav();if(state.view==='skills'){renderSkillTree();return;}filtersUI();state.view==='drops'?renderDrops():renderItems(); }
   function openItemCategory(id) {
     const item=itemMap.get(id);if(!item)return;
     const categoryName=categoryFor(item),category=el.querySelector(`[data-category-group="${CSS.escape(categoryName)}"]`);
@@ -636,13 +687,13 @@
     try{
       const indexLoad=fetch(`${ROOT}index.json`);
       const translationLoad=language==='cn'?ensureTranslations():Promise.resolve();
-      const gachaLoad=location.hash.startsWith('#items')?Promise.resolve():ensureGacha();
+      const gachaLoad=location.hash.startsWith('#drops')||!location.hash?ensureGacha():Promise.resolve();
       const [indexResponse]=await Promise.all([indexLoad,translationLoad,gachaLoad]);
       if(!indexResponse.ok)throw Error('Could not load wiki index');
       index=await indexResponse.json();
       index.items.forEach(item=>{itemMap.set(item.c.toUpperCase(),item);if(!itemNameMap.has(item.n))itemNameMap.set(item.n,item);});
       index.enemies.forEach(enemy=>{if(!enemy.k)return;enemyMap.set(enemy.k,enemy);if(enemy.n&&!enemyNameMap.has(enemy.n))enemyNameMap.set(enemy.n,{enemy,form:'normal'});if(enemy.u&&!enemyNameMap.has(enemy.u))enemyNameMap.set(enemy.u,{enemy,form:'ultimate'});});
-      const validHash=location.hash.startsWith('#items')||location.hash.startsWith('#drops');if(!validHash)history.replaceState(null,'','#drops');
+      const validHash=location.hash.startsWith('#items')||location.hash.startsWith('#drops')||location.hash.startsWith('#skills');if(!validHash)history.replaceState(null,'','#drops');
       await setRoute();status.textContent=t('ready','Ready');
       document.querySelectorAll('[data-language]').forEach(button=>button.addEventListener('click',()=>applyLanguage(button.dataset.language).catch(error=>{console.error(error);status.textContent='中文词条读取失败';})));
       document.querySelectorAll('[data-language]').forEach(button=>{button.classList.toggle('is-active',button.dataset.language===language);button.setAttribute('aria-pressed',String(button.dataset.language===language));});
@@ -661,6 +712,10 @@
     render();
   });
   document.addEventListener('click',event=>{
+    const skillClass=event.target.closest('[data-skill-class]'),skillCategory=event.target.closest('[data-skill-category]'),skillItem=event.target.closest('[data-skill-item]');
+    if(skillClass){state.skillClass=skillClass.dataset.skillClass;state.skillCategory='';state.skillItem='';render();return;}
+    if(skillCategory){state.skillCategory=skillCategory.dataset.skillCategory;state.skillItem='';render();return;}
+    if(skillItem){state.skillItem=skillItem.dataset.skillItem;render();return;}
     const ep=event.target.closest('[data-drop-ep]'),diff=event.target.closest('[data-drop-diff]');
     if(ep){state.filters.ep=ep.dataset.dropEp;render();return;}
     if(diff){state.filters.diff=diff.dataset.dropDiff;render();return;}
