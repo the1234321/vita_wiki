@@ -166,6 +166,11 @@
   async function applyLanguage(next) {
     language = next === 'cn' ? 'cn' : 'en';
     if(language==='cn')await ensureTranslations();
+    if(language==='en'&&state.view==='skills'){
+      history.replaceState(null,'','#drops');
+      state.view='drops';
+      await ensureGacha();
+    }
     localStorage.setItem('wiki-language', language);
     document.documentElement.lang = language === 'cn' ? 'zh-CN' : 'en';
     document.querySelectorAll('[data-language]').forEach(button => {
@@ -183,6 +188,7 @@
     document.querySelector('[data-route="drops"]').innerHTML = `${t('dropTitle','Drop Table')} <small>DROP TABLE</small>`;
     document.querySelector('[data-route="items"]').innerHTML = `${t('itemNav','Equipment')} <small>ITEM DATABASE</small>`;
     document.querySelector('[data-route="skills"]').innerHTML = `${language==='cn'?'技能&商店':'Skills & Shops'} <small>SKILLS &amp; SHOPS</small>`;
+    document.querySelector('[data-route="skills"]').hidden=language!=='cn';
     document.querySelector('.language-switcher').setAttribute('aria-label', t('language','Language'));
     search.placeholder = t('searchPlaceholder', 'Search monsters, items, or IDs…');
     $('.toolbar').hidden=state.view==='skills';
